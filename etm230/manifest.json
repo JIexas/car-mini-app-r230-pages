@@ -1,0 +1,267 @@
+{
+  "source": "http://benz.ehost.tj/230/webetm/webetm/",
+  "downloadedAt": "2026-06-12T15:49:20.996Z",
+  "files": 460,
+  "failed": [
+    {
+      "path": "230/request;",
+      "error": "HTTP 404"
+    },
+    {
+      "path": "230/letterselect.html",
+      "error": "HTTP 404"
+    },
+    {
+      "path": "230/web1100/request;",
+      "error": "HTTP 404"
+    },
+    {
+      "path": "230/web1100/switchPath;",
+      "error": "HTTP 404"
+    },
+    {
+      "path": "230/images/home_n.gif",
+      "error": "HTTP 404"
+    },
+    {
+      "path": "230/images/hand_n.gif",
+      "error": "HTTP 404"
+    },
+    {
+      "path": "230/images/hand_s.gif",
+      "error": "HTTP 404"
+    },
+    {
+      "path": "230/images/lupe_n.gif",
+      "error": "HTTP 404"
+    },
+    {
+      "path": "230/images/lupe_s.gif",
+      "error": "HTTP 404"
+    },
+    {
+      "path": "230/images/kreuz_n.gif",
+      "error": "HTTP 404"
+    },
+    {
+      "path": "230/images/kreuz_s.gif",
+      "error": "HTTP 404"
+    },
+    {
+      "path": "230/images/highlight_n.gif",
+      "error": "HTTP 404"
+    },
+    {
+      "path": "230/images/highlight_s.gif",
+      "error": "HTTP 404"
+    },
+    {
+      "path": "230/images/printer_n.gif",
+      "error": "HTTP 404"
+    },
+    {
+      "path": "230/images/printer_s.gif",
+      "error": "HTTP 404"
+    },
+    {
+      "path": "230/images/left_n.gif",
+      "error": "HTTP 404"
+    },
+    {
+      "path": "230/images/left_s.gif",
+      "error": "HTTP 404"
+    },
+    {
+      "path": "230/images/rechts_n.gif",
+      "error": "HTTP 404"
+    },
+    {
+      "path": "230/images/rechts_s.gif",
+      "error": "HTTP 404"
+    },
+    {
+      "path": "230/help.html",
+      "error": "HTTP 404"
+    },
+    {
+      "path": "230/pe_F.html",
+      "error": "HTTP 404"
+    },
+    {
+      "path": "230/pe_X.html",
+      "error": "HTTP 404"
+    },
+    {
+      "path": "230/pe_W.html",
+      "error": "HTTP 404"
+    },
+    {
+      "path": "230/pe_Z.html",
+      "error": "HTTP 404"
+    },
+    {
+      "path": "230/pe00191100ka.html",
+      "error": "HTTP 404"
+    },
+    {
+      "path": "230/pe07001100ka.html",
+      "error": "HTTP 404"
+    },
+    {
+      "path": "230/pe15001100ka.html",
+      "error": "HTTP 404"
+    },
+    {
+      "path": "230/pe27001100ka.html",
+      "error": "HTTP 404"
+    },
+    {
+      "path": "230/pe30001100ka.html",
+      "error": "HTTP 404"
+    },
+    {
+      "path": "230/pe32001100ka.html",
+      "error": "HTTP 404"
+    },
+    {
+      "path": "230/pe40001100ka.html",
+      "error": "HTTP 404"
+    },
+    {
+      "path": "230/pe42001100ka.html",
+      "error": "HTTP 404"
+    },
+    {
+      "path": "230/pe46001100ka.html",
+      "error": "HTTP 404"
+    },
+    {
+      "path": "230/pe47001100ka.html",
+      "error": "HTTP 404"
+    },
+    {
+      "path": "230/pe54001100ka.html",
+      "error": "HTTP 404"
+    },
+    {
+      "path": "230/pe67001100ka.html",
+      "error": "HTTP 404"
+    },
+    {
+      "path": "230/pe68001100ka.html",
+      "error": "HTTP 404"
+    },
+    {
+      "path": "230/pe72001100ka.html",
+      "error": "HTTP 404"
+    },
+    {
+      "path": "230/pe77001100ka.html",
+      "error": "HTTP 404"
+    },
+    {
+      "path": "230/pe80001100ka.html",
+      "error": "HTTP 404"
+    },
+    {
+      "path": "230/pe82001100ka.html",
+      "error": "HTTP 404"
+    },
+    {
+      "path": "230/pe83001100ka.html",
+      "error": "HTTP 404"
+    },
+    {
+      "path": "230/pe88001100ka.html",
+      "error": "HTTP 404"
+    },
+    {
+      "path": "230/pe91001100ka.html",
+      "error": "HTTP 404"
+    },
+    {
+      "path": "images/clearpix.gif",
+      "error": "HTTP 404"
+    },
+    {
+      "path": "230/a6search.html",
+      "error": "HTTP 404"
+    },
+    {
+      "path": "common/request;",
+      "error": "HTTP 404"
+    },
+    {
+      "path": "common/selectprint.html",
+      "error": "HTTP 404"
+    },
+    {
+      "path": "230/_o.gif",
+      "error": "HTTP 404"
+    },
+    {
+      "path": "230/_s.gif",
+      "error": "HTTP 404"
+    },
+    {
+      "path": "230/_n.gif",
+      "error": "HTTP 404"
+    },
+    {
+      "path": "230/_a.gif",
+      "error": "HTTP 404"
+    },
+    {
+      "path": "230/diagram/w54212121ka.dwf",
+      "error": "UNKNOWN: unknown error, open 'C:\\Users\\Алексей\\Documents\\Codex\\2026-05-16\\new-chat\\car-mini-app\\public\\etm230\\230\\diagram\\w54212121ka.dwf'"
+    },
+    {
+      "path": "230/legend/l",
+      "error": "HTTP 404"
+    },
+    {
+      "path": "230/diagnosis/h",
+      "error": "HTTP 404"
+    },
+    {
+      "path": "230/diagnosis/d",
+      "error": "HTTP 404"
+    },
+    {
+      "path": "230/(sel",
+      "error": "HTTP 404"
+    },
+    {
+      "path": "230/request",
+      "error": "HTTP 404"
+    },
+    {
+      "path": "230/cConnectorFile;",
+      "error": "HTTP 404"
+    },
+    {
+      "path": "230/diagram/cLink",
+      "error": "HTTP 404"
+    },
+    {
+      "path": "230/images/legend_n.gif",
+      "error": "HTTP 404"
+    },
+    {
+      "path": "230/images/diagramm_s.gif",
+      "error": "HTTP 404"
+    },
+    {
+      "path": "230/legend/fullPathName",
+      "error": "HTTP 404"
+    },
+    {
+      "path": "230/legend/request;",
+      "error": "HTTP 404"
+    },
+    {
+      "path": "230/fullPathName",
+      "error": "HTTP 404"
+    }
+  ]
+}

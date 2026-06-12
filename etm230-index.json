@@ -1,0 +1,1449 @@
+{
+  "title": "Электросхемы Mercedes-Benz SL R230 под VIN WDB2304671F117847",
+  "description": "Локальная русская навигация по Web ETM Model 230. Схемы открываются офлайн как обычные изображения.",
+  "startUrl": "etm230/modelsel.html",
+  "targetVehicle": {
+    "model": "230.467",
+    "date": "2006-01-17T00:00:00.000Z",
+    "engine": "112.973",
+    "engineFamily": "112",
+    "gearbox": "722.644",
+    "gearboxFamily": "722.6"
+  },
+  "categories": [
+    {
+      "id": "power",
+      "title": "Питание, предохранители и соединения",
+      "count": 14,
+      "sourceUrl": ""
+    },
+    {
+      "id": "control",
+      "title": "Блоки управления и диагностика",
+      "count": 14,
+      "sourceUrl": ""
+    },
+    {
+      "id": "drivetrain",
+      "title": "Рулевое управление и АКПП",
+      "count": 4,
+      "sourceUrl": ""
+    },
+    {
+      "id": "body",
+      "title": "Кузов, двери, крыша и замки",
+      "count": 16,
+      "sourceUrl": ""
+    },
+    {
+      "id": "light-media",
+      "title": "Свет, стеклоочистители и мультимедиа",
+      "count": 14,
+      "sourceUrl": ""
+    },
+    {
+      "id": "cabin",
+      "title": "Салон, климат и сиденья",
+      "count": 7,
+      "sourceUrl": ""
+    }
+  ],
+  "items": [
+    {
+      "id": "54102101KB",
+      "code": "54.10-U-2101KB",
+      "title": "Блок управления бортовой электросистемой",
+      "appliesTo": "Модель 230 с 01.09.2003 Блок предохранителей F32, лист 1",
+      "sourceUrl": "etm230/230/web1100/pe_F.html#54102101KB",
+      "diagramUrl": "etm230/230/diagram/w54102101kb.html",
+      "dwfUrl": "etm230/230/diagram/w54102101kb.dwf",
+      "categoryId": "power",
+      "categoryTitle": "Питание, предохранители и соединения",
+      "vinStatus": "vin_match",
+      "vinNotes": [],
+      "originalCategoryId": "pe_F",
+      "originalCategoryTitle": "Предохранители",
+      "originalCategoryTitles": [
+        "Предохранители",
+        "54 Электрооборудование, приборы и блоки"
+      ],
+      "imageUrl": "etm230-rendered/images/w54102101kb.png",
+      "viewUrl": "etm230-rendered/schemes/w54102101kb.html"
+    },
+    {
+      "id": "54102101KC",
+      "code": "54.10-U-2101KC",
+      "title": "Блок управления бортовой электросистемой",
+      "appliesTo": "Модель 230 с 01.09.2003 Блок управления N82/1, Блок предохранителей F33, F52, лист 2",
+      "sourceUrl": "etm230/230/web1100/pe_F.html#54102101KC",
+      "diagramUrl": "etm230/230/diagram/w54102101kc.html",
+      "dwfUrl": "etm230/230/diagram/w54102101kc.dwf",
+      "categoryId": "power",
+      "categoryTitle": "Питание, предохранители и соединения",
+      "vinStatus": "vin_match",
+      "vinNotes": [],
+      "originalCategoryId": "pe_F",
+      "originalCategoryTitle": "Предохранители",
+      "originalCategoryTitles": [
+        "Предохранители",
+        "54 Электрооборудование, приборы и блоки"
+      ],
+      "imageUrl": "etm230-rendered/images/w54102101kc.png",
+      "viewUrl": "etm230-rendered/schemes/w54102101kc.html"
+    },
+    {
+      "id": "00192300KG",
+      "code": "00.19-U-2300KG",
+      "title": "Внутренняя CAN-шина",
+      "appliesTo": "Модель 230 с 01.09.2003 лист 1, распределитель напряжения CAN (X30/15)",
+      "sourceUrl": "etm230/230/web1100/pe_X.html#00192300KG",
+      "diagramUrl": "etm230/230/diagram/w00192300kg.html",
+      "dwfUrl": "etm230/230/diagram/w00192300kg.dwf",
+      "categoryId": "power",
+      "categoryTitle": "Питание, предохранители и соединения",
+      "vinStatus": "vin_match",
+      "vinNotes": [],
+      "originalCategoryId": "pe_X",
+      "originalCategoryTitle": "Разъемы",
+      "originalCategoryTitles": [
+        "Разъемы",
+        "00 Многофункциональные цепи"
+      ],
+      "imageUrl": "etm230-rendered/images/w00192300kg.png",
+      "viewUrl": "etm230-rendered/schemes/w00192300kg.html"
+    },
+    {
+      "id": "00192300KH",
+      "code": "00.19-U-2300KH",
+      "title": "Внутренняя CAN-шина",
+      "appliesTo": "Модель 230 с 01.09.2003 лист 2, распределитель напряжения CAN (X30/17)",
+      "sourceUrl": "etm230/230/web1100/pe_X.html#00192300KH",
+      "diagramUrl": "etm230/230/diagram/w00192300kh.html",
+      "dwfUrl": "etm230/230/diagram/w00192300kh.dwf",
+      "categoryId": "power",
+      "categoryTitle": "Питание, предохранители и соединения",
+      "vinStatus": "vin_match",
+      "vinNotes": [],
+      "originalCategoryId": "pe_X",
+      "originalCategoryTitle": "Разъемы",
+      "originalCategoryTitles": [
+        "Разъемы",
+        "00 Многофункциональные цепи"
+      ],
+      "imageUrl": "etm230-rendered/images/w00192300kh.png",
+      "viewUrl": "etm230-rendered/schemes/w00192300kh.html"
+    },
+    {
+      "id": "00192300KI",
+      "code": "00.19-U-2300KI",
+      "title": "Внутренняя CAN-шина",
+      "appliesTo": "Модель 230 с 01.09.2003 лист 3, распределитель напряжения CAN (X30/16)",
+      "sourceUrl": "etm230/230/web1100/pe_X.html#00192300KI",
+      "diagramUrl": "etm230/230/diagram/w00192300ki.html",
+      "dwfUrl": "etm230/230/diagram/w00192300ki.dwf",
+      "categoryId": "power",
+      "categoryTitle": "Питание, предохранители и соединения",
+      "vinStatus": "vin_match",
+      "vinNotes": [],
+      "originalCategoryId": "pe_X",
+      "originalCategoryTitle": "Разъемы",
+      "originalCategoryTitles": [
+        "Разъемы",
+        "00 Многофункциональные цепи"
+      ],
+      "imageUrl": "etm230-rendered/images/w00192300ki.png",
+      "viewUrl": "etm230-rendered/schemes/w00192300ki.html"
+    },
+    {
+      "id": "54182100KA",
+      "code": "54.18-U-2100KA",
+      "title": "Распределитель напряжения",
+      "appliesTo": "Модель 230 Z3/29z1, Z3/29z2, Z4/3, Z4/4, Z4/7, Z6/33z2, лист 1",
+      "sourceUrl": "etm230/230/web1100/pe_X.html#54182100KA",
+      "diagramUrl": "etm230/230/diagram/w54182100ka.html",
+      "dwfUrl": "etm230/230/diagram/w54182100ka.dwf",
+      "categoryId": "power",
+      "categoryTitle": "Питание, предохранители и соединения",
+      "vinStatus": "common_model_230",
+      "vinNotes": [],
+      "originalCategoryId": "pe_X",
+      "originalCategoryTitle": "Разъемы",
+      "originalCategoryTitles": [
+        "Разъемы",
+        "Соединения проводки",
+        "54 Электрооборудование, приборы и блоки"
+      ],
+      "imageUrl": "etm230-rendered/images/w54182100ka.png",
+      "viewUrl": "etm230-rendered/schemes/w54182100ka.html"
+    },
+    {
+      "id": "54182100KB",
+      "code": "54.18-U-2100KB",
+      "title": "Распределитель напряжения",
+      "appliesTo": "Модель 230 Z7/35, Z7/35z1, Z7/35z2, Z7/35z3, Z7/36, Z7/38, Z7/38z1, Z7/38z2, Z7/39, Z7/41, Z7/43z1, Z7/43z2, лист 2",
+      "sourceUrl": "etm230/230/web1100/pe_X.html#54182100KB",
+      "diagramUrl": "etm230/230/diagram/w54182100kb.html",
+      "dwfUrl": "etm230/230/diagram/w54182100kb.dwf",
+      "categoryId": "power",
+      "categoryTitle": "Питание, предохранители и соединения",
+      "vinStatus": "common_model_230",
+      "vinNotes": [],
+      "originalCategoryId": "pe_X",
+      "originalCategoryTitle": "Разъемы",
+      "originalCategoryTitles": [
+        "Разъемы",
+        "Соединения проводки",
+        "54 Электрооборудование, приборы и блоки"
+      ],
+      "imageUrl": "etm230-rendered/images/w54182100kb.png",
+      "viewUrl": "etm230-rendered/schemes/w54182100kb.html"
+    },
+    {
+      "id": "54182300KA",
+      "code": "54.18-U-2300KA",
+      "title": "Точки разъединения разъемов",
+      "appliesTo": "Модель 230 X8/4, X18/32, X30/12, X35/63, X39/29, лист 1",
+      "sourceUrl": "etm230/230/web1100/pe_X.html#54182300KA",
+      "diagramUrl": "etm230/230/diagram/w54182300ka.html",
+      "dwfUrl": "etm230/230/diagram/w54182300ka.dwf",
+      "categoryId": "power",
+      "categoryTitle": "Питание, предохранители и соединения",
+      "vinStatus": "common_model_230",
+      "vinNotes": [],
+      "originalCategoryId": "pe_X",
+      "originalCategoryTitle": "Разъемы",
+      "originalCategoryTitles": [
+        "Разъемы",
+        "54 Электрооборудование, приборы и блоки"
+      ],
+      "imageUrl": "etm230-rendered/images/w54182300ka.png",
+      "viewUrl": "etm230-rendered/schemes/w54182300ka.html"
+    },
+    {
+      "id": "54182300KB",
+      "code": "54.18-U-2300KB",
+      "title": "Точки разъединения разъемов",
+      "appliesTo": "Модель 230 X35/15, X62/1, X62/2, лист 2",
+      "sourceUrl": "etm230/230/web1100/pe_X.html#54182300KB",
+      "diagramUrl": "etm230/230/diagram/w54182300kb.html",
+      "dwfUrl": "etm230/230/diagram/w54182300kb.dwf",
+      "categoryId": "power",
+      "categoryTitle": "Питание, предохранители и соединения",
+      "vinStatus": "common_model_230",
+      "vinNotes": [],
+      "originalCategoryId": "pe_X",
+      "originalCategoryTitle": "Разъемы",
+      "originalCategoryTitles": [
+        "Разъемы",
+        "54 Электрооборудование, приборы и блоки"
+      ],
+      "imageUrl": "etm230-rendered/images/w54182300kb.png",
+      "viewUrl": "etm230-rendered/schemes/w54182300kb.html"
+    },
+    {
+      "id": "00192800KA",
+      "code": "00.19-U-2800KA",
+      "title": "Точки массы",
+      "appliesTo": "Модель 230 W3/1, W3/2, W6, W6/1, W7, W10/3, W11/3, W15, W15/3, лист 1",
+      "sourceUrl": "etm230/230/web1100/pe_W.html#00192800KA",
+      "diagramUrl": "etm230/230/diagram/w00192800ka.html",
+      "dwfUrl": "etm230/230/diagram/w00192800ka.dwf",
+      "categoryId": "power",
+      "categoryTitle": "Питание, предохранители и соединения",
+      "vinStatus": "common_model_230",
+      "vinNotes": [],
+      "originalCategoryId": "pe_W",
+      "originalCategoryTitle": "Массы",
+      "originalCategoryTitles": [
+        "Массы",
+        "00 Многофункциональные цепи"
+      ],
+      "imageUrl": "etm230-rendered/images/w00192800ka.png",
+      "viewUrl": "etm230-rendered/schemes/w00192800ka.html"
+    },
+    {
+      "id": "00192800KB",
+      "code": "00.19-U-2800KB",
+      "title": "Точки массы",
+      "appliesTo": "Модель 230 W26, W30, W34/1, W34/2, лист 2",
+      "sourceUrl": "etm230/230/web1100/pe_W.html#00192800KB",
+      "diagramUrl": "etm230/230/diagram/w00192800kb.html",
+      "dwfUrl": "etm230/230/diagram/w00192800kb.dwf",
+      "categoryId": "power",
+      "categoryTitle": "Питание, предохранители и соединения",
+      "vinStatus": "common_model_230",
+      "vinNotes": [],
+      "originalCategoryId": "pe_W",
+      "originalCategoryTitle": "Массы",
+      "originalCategoryTitles": [
+        "Массы",
+        "00 Многофункциональные цепи"
+      ],
+      "imageUrl": "etm230-rendered/images/w00192800kb.png",
+      "viewUrl": "etm230-rendered/schemes/w00192800kb.html"
+    },
+    {
+      "id": "00192800KC",
+      "code": "00.19-U-2800KC",
+      "title": "Точки массы",
+      "appliesTo": "Модель 230 W36, W37, лист 3",
+      "sourceUrl": "etm230/230/web1100/pe_W.html#00192800KC",
+      "diagramUrl": "etm230/230/diagram/w00192800kc.html",
+      "dwfUrl": "etm230/230/diagram/w00192800kc.dwf",
+      "categoryId": "power",
+      "categoryTitle": "Питание, предохранители и соединения",
+      "vinStatus": "common_model_230",
+      "vinNotes": [],
+      "originalCategoryId": "pe_W",
+      "originalCategoryTitle": "Массы",
+      "originalCategoryTitles": [
+        "Массы",
+        "00 Многофункциональные цепи"
+      ],
+      "imageUrl": "etm230-rendered/images/w00192800kc.png",
+      "viewUrl": "etm230-rendered/schemes/w00192800kc.html"
+    },
+    {
+      "id": "27192102KB",
+      "code": "27.19-U-2102KB",
+      "title": "Блок управления электронным селектором АКПП",
+      "appliesTo": "коробка передач 722.6 /9 in Модель 230 с 01.09.2003 с код (423) автоматический 5-ступенчатая коробка передач (NAG) с код (427) 7-скорость автоматическая коробка",
+      "sourceUrl": "etm230/230/web1100/pe27001100ka.html#27192102KB",
+      "diagramUrl": "etm230/230/diagram/w27192102kb.html",
+      "dwfUrl": "etm230/230/diagram/w27192102kb.dwf",
+      "categoryId": "drivetrain",
+      "categoryTitle": "Рулевое управление и АКПП",
+      "vinStatus": "vin_match",
+      "vinNotes": [
+        "альтернативные SA-коды не из VIN: 427"
+      ],
+      "originalCategoryId": "pe27001100ka",
+      "originalCategoryTitle": "27 Автоматическая коробка",
+      "originalCategoryTitles": [
+        "27 Автоматическая коробка"
+      ],
+      "imageUrl": "etm230-rendered/images/w27192102kb.png",
+      "viewUrl": "etm230-rendered/schemes/w27192102kb.html"
+    },
+    {
+      "id": "46112050KA",
+      "code": "46.11-U-2050KA",
+      "title": "Подогрев рулевого колеса",
+      "appliesTo": "Модель 230",
+      "sourceUrl": "etm230/230/web1100/pe46001100ka.html#46112050KA",
+      "diagramUrl": "etm230/230/diagram/w46112050ka.html",
+      "dwfUrl": "etm230/230/diagram/w46112050ka.dwf",
+      "categoryId": "drivetrain",
+      "categoryTitle": "Рулевое управление и АКПП",
+      "vinStatus": "common_model_230",
+      "vinNotes": [],
+      "originalCategoryId": "pe46001100ka",
+      "originalCategoryTitle": "46 Рулевое управление",
+      "originalCategoryTitles": [
+        "46 Рулевое управление"
+      ],
+      "imageUrl": "etm230-rendered/images/w46112050ka.png",
+      "viewUrl": "etm230-rendered/schemes/w46112050ka.html"
+    },
+    {
+      "id": "46152050KA",
+      "code": "46.15-U-2050KA",
+      "title": "Регулировка рулевой колонки с памятью",
+      "appliesTo": "Модель 230 регулировка рулевой колонки с память",
+      "sourceUrl": "etm230/230/web1100/pe46001100ka.html#46152050KA",
+      "diagramUrl": "etm230/230/diagram/w46152050ka.html",
+      "dwfUrl": "etm230/230/diagram/w46152050ka.dwf",
+      "categoryId": "drivetrain",
+      "categoryTitle": "Рулевое управление и АКПП",
+      "vinStatus": "common_model_230",
+      "vinNotes": [],
+      "originalCategoryId": "pe46001100ka",
+      "originalCategoryTitle": "46 Рулевое управление",
+      "originalCategoryTitles": [
+        "46 Рулевое управление"
+      ],
+      "imageUrl": "etm230-rendered/images/w46152050ka.png",
+      "viewUrl": "etm230-rendered/schemes/w46152050ka.html"
+    },
+    {
+      "id": "46102101KB",
+      "code": "46.10-U-2101KB",
+      "title": "Блок управления рулевой колонкой",
+      "appliesTo": "Модель 230 с 01.09.2003",
+      "sourceUrl": "etm230/230/web1100/pe46001100ka.html#46102101KB",
+      "diagramUrl": "etm230/230/diagram/w46102101kb.html",
+      "dwfUrl": "etm230/230/diagram/w46102101kb.dwf",
+      "categoryId": "drivetrain",
+      "categoryTitle": "Рулевое управление и АКПП",
+      "vinStatus": "vin_match",
+      "vinNotes": [],
+      "originalCategoryId": "pe46001100ka",
+      "originalCategoryTitle": "46 Рулевое управление",
+      "originalCategoryTitles": [
+        "46 Рулевое управление"
+      ],
+      "imageUrl": "etm230-rendered/images/w46102101kb.png",
+      "viewUrl": "etm230-rendered/schemes/w46102101kb.html"
+    },
+    {
+      "id": "54152103KA",
+      "code": "54.15-U-2103KA",
+      "title": "Задний блок предохранителей и реле",
+      "appliesTo": "Модель 230 с двигателем 112.973, 113.963 /992 до 28.02.2006, 113.995 с 01.03.2006",
+      "sourceUrl": "etm230/230/web1100/pe54001100ka.html#54152103KA",
+      "diagramUrl": "etm230/230/diagram/w54152103ka.html",
+      "dwfUrl": "etm230/230/diagram/w54152103ka.dwf",
+      "categoryId": "power",
+      "categoryTitle": "Питание, предохранители и соединения",
+      "vinStatus": "vin_match",
+      "vinNotes": [],
+      "originalCategoryId": "pe54001100ka",
+      "originalCategoryTitle": "54 Электрооборудование, приборы и блоки",
+      "originalCategoryTitles": [
+        "54 Электрооборудование, приборы и блоки"
+      ],
+      "imageUrl": "etm230-rendered/images/w54152103ka.png",
+      "viewUrl": "etm230-rendered/schemes/w54152103ka.html"
+    },
+    {
+      "id": "54152104KA",
+      "code": "54.15-U-2104KA",
+      "title": "Блок предохранителей и реле со стороны водителя",
+      "appliesTo": "Модель 230",
+      "sourceUrl": "etm230/230/web1100/pe54001100ka.html#54152104KA",
+      "diagramUrl": "etm230/230/diagram/w54152104ka.html",
+      "dwfUrl": "etm230/230/diagram/w54152104ka.dwf",
+      "categoryId": "power",
+      "categoryTitle": "Питание, предохранители и соединения",
+      "vinStatus": "common_model_230",
+      "vinNotes": [],
+      "originalCategoryId": "pe54001100ka",
+      "originalCategoryTitle": "54 Электрооборудование, приборы и блоки",
+      "originalCategoryTitles": [
+        "54 Электрооборудование, приборы и блоки"
+      ],
+      "imageUrl": "etm230-rendered/images/w54152104ka.png",
+      "viewUrl": "etm230-rendered/schemes/w54152104ka.html"
+    },
+    {
+      "id": "54212103KA",
+      "code": "54.21-U-2103KA",
+      "title": "Задний SAM",
+      "appliesTo": "Модель 230",
+      "sourceUrl": "etm230/230/web1100/pe54001100ka.html#54212103KA",
+      "diagramUrl": "etm230/230/diagram/w54212103ka.html",
+      "dwfUrl": "etm230/230/diagram/w54212103ka.dwf",
+      "categoryId": "control",
+      "categoryTitle": "Блоки управления и диагностика",
+      "vinStatus": "common_model_230",
+      "vinNotes": [],
+      "originalCategoryId": "pe54001100ka",
+      "originalCategoryTitle": "54 Электрооборудование, приборы и блоки",
+      "originalCategoryTitles": [
+        "54 Электрооборудование, приборы и блоки"
+      ],
+      "imageUrl": "etm230-rendered/images/w54212103ka.png",
+      "viewUrl": "etm230-rendered/schemes/w54212103ka.html"
+    },
+    {
+      "id": "54212104KA",
+      "code": "54.21-U-2104KA",
+      "title": "Электронный замок зажигания EIS",
+      "appliesTo": "Модель 230",
+      "sourceUrl": "etm230/230/web1100/pe54001100ka.html#54212104KA",
+      "diagramUrl": "etm230/230/diagram/w54212104ka.html",
+      "dwfUrl": "etm230/230/diagram/w54212104ka.dwf",
+      "categoryId": "control",
+      "categoryTitle": "Блоки управления и диагностика",
+      "vinStatus": "common_model_230",
+      "vinNotes": [],
+      "originalCategoryId": "pe54001100ka",
+      "originalCategoryTitle": "54 Электрооборудование, приборы и блоки",
+      "originalCategoryTitles": [
+        "54 Электрооборудование, приборы и блоки"
+      ],
+      "imageUrl": "etm230-rendered/images/w54212104ka.png",
+      "viewUrl": "etm230-rendered/schemes/w54212104ka.html"
+    },
+    {
+      "id": "54212107KA",
+      "code": "54.21-U-2107KA",
+      "title": "Верхняя панель управления OCP",
+      "appliesTo": "Модель 230",
+      "sourceUrl": "etm230/230/web1100/pe54001100ka.html#54212107KA",
+      "diagramUrl": "etm230/230/diagram/w54212107ka.html",
+      "dwfUrl": "etm230/230/diagram/w54212107ka.dwf",
+      "categoryId": "control",
+      "categoryTitle": "Блоки управления и диагностика",
+      "vinStatus": "common_model_230",
+      "vinNotes": [],
+      "originalCategoryId": "pe54001100ka",
+      "originalCategoryTitle": "54 Электрооборудование, приборы и блоки",
+      "originalCategoryTitles": [
+        "54 Электрооборудование, приборы и блоки"
+      ],
+      "imageUrl": "etm230-rendered/images/w54212107ka.png",
+      "viewUrl": "etm230-rendered/schemes/w54212107ka.html"
+    },
+    {
+      "id": "54212120KA",
+      "code": "54.21-U-2120KA",
+      "title": "Нижняя панель управления N72",
+      "appliesTo": "Модель 230",
+      "sourceUrl": "etm230/230/web1100/pe54001100ka.html#54212120KA",
+      "diagramUrl": "etm230/230/diagram/w54212120ka.html",
+      "dwfUrl": "etm230/230/diagram/w54212120ka.dwf",
+      "categoryId": "control",
+      "categoryTitle": "Блоки управления и диагностика",
+      "vinStatus": "common_model_230",
+      "vinNotes": [],
+      "originalCategoryId": "pe54001100ka",
+      "originalCategoryTitle": "54 Электрооборудование, приборы и блоки",
+      "originalCategoryTitles": [
+        "54 Электрооборудование, приборы и блоки"
+      ],
+      "imageUrl": "etm230-rendered/images/w54212120ka.png",
+      "viewUrl": "etm230-rendered/schemes/w54212120ka.html"
+    },
+    {
+      "id": "54212121KA",
+      "code": "54.21-U-2121KA",
+      "title": "SAM со стороны водителя",
+      "appliesTo": "Модель 230",
+      "sourceUrl": "etm230/230/web1100/pe54001100ka.html#54212121KA",
+      "diagramUrl": "etm230/230/diagram/w54212121ka.html",
+      "dwfUrl": "etm230/230/diagram/w54212121ka.dwf",
+      "categoryId": "control",
+      "categoryTitle": "Блоки управления и диагностика",
+      "vinStatus": "common_model_230",
+      "vinNotes": [],
+      "originalCategoryId": "pe54001100ka",
+      "originalCategoryTitle": "54 Электрооборудование, приборы и блоки",
+      "originalCategoryTitles": [
+        "54 Электрооборудование, приборы и блоки"
+      ],
+      "imageUrl": "etm230-rendered/images/w54212121ka.png",
+      "viewUrl": "etm230-rendered/schemes/w54212121ka.html"
+    },
+    {
+      "id": "54212122KA",
+      "code": "54.21-U-2122KA",
+      "title": "SAM со стороны пассажира",
+      "appliesTo": "Модель 230",
+      "sourceUrl": "etm230/230/web1100/pe54001100ka.html#54212122KA",
+      "diagramUrl": "etm230/230/diagram/w54212122ka.html",
+      "dwfUrl": "etm230/230/diagram/w54212122ka.dwf",
+      "categoryId": "control",
+      "categoryTitle": "Блоки управления и диагностика",
+      "vinStatus": "common_model_230",
+      "vinNotes": [],
+      "originalCategoryId": "pe54001100ka",
+      "originalCategoryTitle": "54 Электрооборудование, приборы и блоки",
+      "originalCategoryTitles": [
+        "54 Электрооборудование, приборы и блоки"
+      ],
+      "imageUrl": "etm230-rendered/images/w54212122ka.png",
+      "viewUrl": "etm230-rendered/schemes/w54212122ka.html"
+    },
+    {
+      "id": "54212124KA",
+      "code": "54.21-U-2124KA",
+      "title": "Центральный шлюз",
+      "appliesTo": "Модель 230 с 01.09.2003",
+      "sourceUrl": "etm230/230/web1100/pe54001100ka.html#54212124KA",
+      "diagramUrl": "etm230/230/diagram/w54212124ka.html",
+      "dwfUrl": "etm230/230/diagram/w54212124ka.dwf",
+      "categoryId": "control",
+      "categoryTitle": "Блоки управления и диагностика",
+      "vinStatus": "vin_match",
+      "vinNotes": [],
+      "originalCategoryId": "pe54001100ka",
+      "originalCategoryTitle": "54 Электрооборудование, приборы и блоки",
+      "originalCategoryTitles": [
+        "54 Электрооборудование, приборы и блоки"
+      ],
+      "imageUrl": "etm230-rendered/images/w54212124ka.png",
+      "viewUrl": "etm230-rendered/schemes/w54212124ka.html"
+    },
+    {
+      "id": "54222000KB",
+      "code": "54.22-U-2000KB",
+      "title": "Диагностический разъем и линия данных",
+      "appliesTo": "Модель 230 с 01.06.2004",
+      "sourceUrl": "etm230/230/web1100/pe54001100ka.html#54222000KB",
+      "diagramUrl": "etm230/230/diagram/w54222000kb.html",
+      "dwfUrl": "etm230/230/diagram/w54222000kb.dwf",
+      "categoryId": "control",
+      "categoryTitle": "Блоки управления и диагностика",
+      "vinStatus": "vin_match",
+      "vinNotes": [],
+      "originalCategoryId": "pe54001100ka",
+      "originalCategoryTitle": "54 Электрооборудование, приборы и блоки",
+      "originalCategoryTitles": [
+        "54 Электрооборудование, приборы и блоки"
+      ],
+      "imageUrl": "etm230-rendered/images/w54222000kb.png",
+      "viewUrl": "etm230-rendered/schemes/w54222000kb.html"
+    },
+    {
+      "id": "54302051KA",
+      "code": "54.30-U-2051KA",
+      "title": "Приборная панель: функциональная схема",
+      "appliesTo": "Модель 230 до 28.02.2006",
+      "sourceUrl": "etm230/230/web1100/pe54001100ka.html#54302051KA",
+      "diagramUrl": "etm230/230/diagram/w54302051ka.html",
+      "dwfUrl": "etm230/230/diagram/w54302051ka.dwf",
+      "categoryId": "control",
+      "categoryTitle": "Блоки управления и диагностика",
+      "vinStatus": "vin_match",
+      "vinNotes": [],
+      "originalCategoryId": "pe54001100ka",
+      "originalCategoryTitle": "54 Электрооборудование, приборы и блоки",
+      "originalCategoryTitles": [
+        "54 Электрооборудование, приборы и блоки"
+      ],
+      "imageUrl": "etm230-rendered/images/w54302051ka.png",
+      "viewUrl": "etm230-rendered/schemes/w54302051ka.html"
+    },
+    {
+      "id": "54302101KA",
+      "code": "54.30-U-2101KA",
+      "title": "Блок управления приборной панелью IC",
+      "appliesTo": "Модель 230",
+      "sourceUrl": "etm230/230/web1100/pe54001100ka.html#54302101KA",
+      "diagramUrl": "etm230/230/diagram/w54302101ka.html",
+      "dwfUrl": "etm230/230/diagram/w54302101ka.dwf",
+      "categoryId": "control",
+      "categoryTitle": "Блоки управления и диагностика",
+      "vinStatus": "common_model_230",
+      "vinNotes": [],
+      "originalCategoryId": "pe54001100ka",
+      "originalCategoryTitle": "54 Электрооборудование, приборы и блоки",
+      "originalCategoryTitles": [
+        "54 Электрооборудование, приборы и блоки"
+      ],
+      "imageUrl": "etm230-rendered/images/w54302101ka.png",
+      "viewUrl": "etm230-rendered/schemes/w54302101ka.html"
+    },
+    {
+      "id": "54352050KA",
+      "code": "54.35-U-2050KA",
+      "title": "Звуковой сигнал",
+      "appliesTo": "Модель 230",
+      "sourceUrl": "etm230/230/web1100/pe54001100ka.html#54352050KA",
+      "diagramUrl": "etm230/230/diagram/w54352050ka.html",
+      "dwfUrl": "etm230/230/diagram/w54352050ka.dwf",
+      "categoryId": "control",
+      "categoryTitle": "Блоки управления и диагностика",
+      "vinStatus": "common_model_230",
+      "vinNotes": [],
+      "originalCategoryId": "pe54001100ka",
+      "originalCategoryTitle": "54 Электрооборудование, приборы и блоки",
+      "originalCategoryTitles": [
+        "54 Электрооборудование, приборы и блоки"
+      ],
+      "imageUrl": "etm230-rendered/images/w54352050ka.png",
+      "viewUrl": "etm230-rendered/schemes/w54352050ka.html"
+    },
+    {
+      "id": "54502050KA",
+      "code": "54.50-U-2050KA",
+      "title": "Бортовой компьютер",
+      "appliesTo": "Модель 230",
+      "sourceUrl": "etm230/230/web1100/pe54001100ka.html#54502050KA",
+      "diagramUrl": "etm230/230/diagram/w54502050ka.html",
+      "dwfUrl": "etm230/230/diagram/w54502050ka.dwf",
+      "categoryId": "control",
+      "categoryTitle": "Блоки управления и диагностика",
+      "vinStatus": "common_model_230",
+      "vinNotes": [],
+      "originalCategoryId": "pe54001100ka",
+      "originalCategoryTitle": "54 Электрооборудование, приборы и блоки",
+      "originalCategoryTitles": [
+        "54 Электрооборудование, приборы и блоки"
+      ],
+      "imageUrl": "etm230-rendered/images/w54502050ka.png",
+      "viewUrl": "etm230-rendered/schemes/w54502050ka.html"
+    },
+    {
+      "id": "54652050KA",
+      "code": "54.65-U-2050KA",
+      "title": "Parktronic: функциональная схема",
+      "appliesTo": "Модель 230 до 28.02.2006 с код (220) Parktronic система (PTS)",
+      "sourceUrl": "etm230/230/web1100/pe54001100ka.html#54652050KA",
+      "diagramUrl": "etm230/230/diagram/w54652050ka.html",
+      "dwfUrl": "etm230/230/diagram/w54652050ka.dwf",
+      "categoryId": "control",
+      "categoryTitle": "Блоки управления и диагностика",
+      "vinStatus": "vin_match",
+      "vinNotes": [],
+      "originalCategoryId": "pe54001100ka",
+      "originalCategoryTitle": "54 Электрооборудование, приборы и блоки",
+      "originalCategoryTitles": [
+        "54 Электрооборудование, приборы и блоки"
+      ],
+      "imageUrl": "etm230-rendered/images/w54652050ka.png",
+      "viewUrl": "etm230-rendered/schemes/w54652050ka.html"
+    },
+    {
+      "id": "54652101KA",
+      "code": "54.65-U-2101KA",
+      "title": "Блок управления Parktronic PTS",
+      "appliesTo": "Модель 230 до 28.02.2006 с код (220) Parktronic система (PTS)",
+      "sourceUrl": "etm230/230/web1100/pe54001100ka.html#54652101KA",
+      "diagramUrl": "etm230/230/diagram/w54652101ka.html",
+      "dwfUrl": "etm230/230/diagram/w54652101ka.dwf",
+      "categoryId": "control",
+      "categoryTitle": "Блоки управления и диагностика",
+      "vinStatus": "vin_match",
+      "vinNotes": [],
+      "originalCategoryId": "pe54001100ka",
+      "originalCategoryTitle": "54 Электрооборудование, приборы и блоки",
+      "originalCategoryTitles": [
+        "54 Электрооборудование, приборы и блоки"
+      ],
+      "imageUrl": "etm230-rendered/images/w54652101ka.png",
+      "viewUrl": "etm230-rendered/schemes/w54652101ka.html"
+    },
+    {
+      "id": "67292050KA",
+      "code": "67.29-U-2050KA",
+      "title": "Обогрев заднего стекла",
+      "appliesTo": "Модель 230",
+      "sourceUrl": "etm230/230/web1100/pe67001100ka.html#67292050KA",
+      "diagramUrl": "etm230/230/diagram/w67292050ka.html",
+      "dwfUrl": "etm230/230/diagram/w67292050ka.dwf",
+      "categoryId": "body",
+      "categoryTitle": "Кузов, двери, крыша и замки",
+      "vinStatus": "common_model_230",
+      "vinNotes": [],
+      "originalCategoryId": "pe67001100ka",
+      "originalCategoryTitle": "67 Стекла",
+      "originalCategoryTitles": [
+        "67 Стекла"
+      ],
+      "imageUrl": "etm230-rendered/images/w67292050ka.png",
+      "viewUrl": "etm230-rendered/schemes/w67292050ka.html"
+    },
+    {
+      "id": "68492050KA",
+      "code": "68.49-U-2050KA",
+      "title": "Автозатемнение внутреннего зеркала",
+      "appliesTo": "Модель 230",
+      "sourceUrl": "etm230/230/web1100/pe68001100ka.html#68492050KA",
+      "diagramUrl": "etm230/230/diagram/w68492050ka.html",
+      "dwfUrl": "etm230/230/diagram/w68492050ka.dwf",
+      "categoryId": "cabin",
+      "categoryTitle": "Салон, климат и сиденья",
+      "vinStatus": "common_model_230",
+      "vinNotes": [],
+      "originalCategoryId": "pe68001100ka",
+      "originalCategoryTitle": "68 Оборудование салона",
+      "originalCategoryTitles": [
+        "68 Оборудование салона"
+      ],
+      "imageUrl": "etm230-rendered/images/w68492050ka.png",
+      "viewUrl": "etm230-rendered/schemes/w68492050ka.html"
+    },
+    {
+      "id": "72292050KA",
+      "code": "72.29-U-2050KA",
+      "title": "Стеклоподъемники",
+      "appliesTo": "Модель 230",
+      "sourceUrl": "etm230/230/web1100/pe72001100ka.html#72292050KA",
+      "diagramUrl": "etm230/230/diagram/w72292050ka.html",
+      "dwfUrl": "etm230/230/diagram/w72292050ka.dwf",
+      "categoryId": "body",
+      "categoryTitle": "Кузов, двери, крыша и замки",
+      "vinStatus": "common_model_230",
+      "vinNotes": [],
+      "originalCategoryId": "pe72001100ka",
+      "originalCategoryTitle": "72 Двери",
+      "originalCategoryTitles": [
+        "72 Двери"
+      ],
+      "imageUrl": "etm230-rendered/images/w72292050ka.png",
+      "viewUrl": "etm230-rendered/schemes/w72292050ka.html"
+    },
+    {
+      "id": "72292101KA",
+      "code": "72.29-U-2101KA",
+      "title": "Блок управления левой дверью DCM",
+      "appliesTo": "Модель 230",
+      "sourceUrl": "etm230/230/web1100/pe72001100ka.html#72292101KA",
+      "diagramUrl": "etm230/230/diagram/w72292101ka.html",
+      "dwfUrl": "etm230/230/diagram/w72292101ka.dwf",
+      "categoryId": "body",
+      "categoryTitle": "Кузов, двери, крыша и замки",
+      "vinStatus": "common_model_230",
+      "vinNotes": [],
+      "originalCategoryId": "pe72001100ka",
+      "originalCategoryTitle": "72 Двери",
+      "originalCategoryTitles": [
+        "72 Двери"
+      ],
+      "imageUrl": "etm230-rendered/images/w72292101ka.png",
+      "viewUrl": "etm230-rendered/schemes/w72292101ka.html"
+    },
+    {
+      "id": "72292102KA",
+      "code": "72.29-U-2102KA",
+      "title": "Блок управления правой дверью DCM",
+      "appliesTo": "Модель 230",
+      "sourceUrl": "etm230/230/web1100/pe72001100ka.html#72292102KA",
+      "diagramUrl": "etm230/230/diagram/w72292102ka.html",
+      "dwfUrl": "etm230/230/diagram/w72292102ka.dwf",
+      "categoryId": "body",
+      "categoryTitle": "Кузов, двери, крыша и замки",
+      "vinStatus": "common_model_230",
+      "vinNotes": [],
+      "originalCategoryId": "pe72001100ka",
+      "originalCategoryTitle": "72 Двери",
+      "originalCategoryTitles": [
+        "72 Двери"
+      ],
+      "imageUrl": "etm230-rendered/images/w72292102ka.png",
+      "viewUrl": "etm230-rendered/schemes/w72292102ka.html"
+    },
+    {
+      "id": "77392050KA",
+      "code": "77.39-U-2050KA",
+      "title": "Крыша Vario: функциональная схема",
+      "appliesTo": "Модель 230 без доводчик крышки багажника",
+      "sourceUrl": "etm230/230/web1100/pe77001100ka.html#77392050KA",
+      "diagramUrl": "etm230/230/diagram/w77392050ka.html",
+      "dwfUrl": "etm230/230/diagram/w77392050ka.dwf",
+      "categoryId": "body",
+      "categoryTitle": "Кузов, двери, крыша и замки",
+      "vinStatus": "common_model_230",
+      "vinNotes": [],
+      "originalCategoryId": "pe77001100ka",
+      "originalCategoryTitle": "77 Крыша Vario и навесные элементы",
+      "originalCategoryTitles": [
+        "77 Крыша Vario и навесные элементы"
+      ],
+      "imageUrl": "etm230-rendered/images/w77392050ka.png",
+      "viewUrl": "etm230-rendered/schemes/w77392050ka.html"
+    },
+    {
+      "id": "77392101KB",
+      "code": "77.39-U-2101KB",
+      "title": "Блок управления крышей Vario",
+      "appliesTo": "Модель 230 с 01.09.2003 без доводчик крышки багажника",
+      "sourceUrl": "etm230/230/web1100/pe77001100ka.html#77392101KB",
+      "diagramUrl": "etm230/230/diagram/w77392101kb.html",
+      "dwfUrl": "etm230/230/diagram/w77392101kb.dwf",
+      "categoryId": "body",
+      "categoryTitle": "Кузов, двери, крыша и замки",
+      "vinStatus": "vin_match",
+      "vinNotes": [],
+      "originalCategoryId": "pe77001100ka",
+      "originalCategoryTitle": "77 Крыша Vario и навесные элементы",
+      "originalCategoryTitles": [
+        "77 Крыша Vario и навесные элементы"
+      ],
+      "imageUrl": "etm230-rendered/images/w77392101kb.png",
+      "viewUrl": "etm230-rendered/schemes/w77392101kb.html"
+    },
+    {
+      "id": "80202050KA",
+      "code": "80.20-U-2050KA",
+      "title": "Центральный замок CL: функциональная схема",
+      "appliesTo": "Модель 230",
+      "sourceUrl": "etm230/230/web1100/pe80001100ka.html#80202050KA",
+      "diagramUrl": "etm230/230/diagram/w80202050ka.html",
+      "dwfUrl": "etm230/230/diagram/w80202050ka.dwf",
+      "categoryId": "body",
+      "categoryTitle": "Кузов, двери, крыша и замки",
+      "vinStatus": "common_model_230",
+      "vinNotes": [],
+      "originalCategoryId": "pe80001100ka",
+      "originalCategoryTitle": "80 Центральный замок",
+      "originalCategoryTitles": [
+        "80 Центральный замок"
+      ],
+      "imageUrl": "etm230-rendered/images/w80202050ka.png",
+      "viewUrl": "etm230-rendered/schemes/w80202050ka.html"
+    },
+    {
+      "id": "80202101KA",
+      "code": "80.20-U-2101KA",
+      "title": "Пневматическая система PSE",
+      "appliesTo": "Модель 230",
+      "sourceUrl": "etm230/230/web1100/pe80001100ka.html#80202101KA",
+      "diagramUrl": "etm230/230/diagram/w80202101ka.html",
+      "dwfUrl": "etm230/230/diagram/w80202101ka.dwf",
+      "categoryId": "body",
+      "categoryTitle": "Кузов, двери, крыша и замки",
+      "vinStatus": "common_model_230",
+      "vinNotes": [],
+      "originalCategoryId": "pe80001100ka",
+      "originalCategoryTitle": "80 Центральный замок",
+      "originalCategoryTitles": [
+        "80 Центральный замок"
+      ],
+      "imageUrl": "etm230-rendered/images/w80202101ka.png",
+      "viewUrl": "etm230-rendered/schemes/w80202101ka.html"
+    },
+    {
+      "id": "80402050KA",
+      "code": "80.40-U-2050KA",
+      "title": "Доводчики дверей и крышек",
+      "appliesTo": "Модель 230",
+      "sourceUrl": "etm230/230/web1100/pe80001100ka.html#80402050KA",
+      "diagramUrl": "etm230/230/diagram/w80402050ka.html",
+      "dwfUrl": "etm230/230/diagram/w80402050ka.dwf",
+      "categoryId": "body",
+      "categoryTitle": "Кузов, двери, крыша и замки",
+      "vinStatus": "common_model_230",
+      "vinNotes": [],
+      "originalCategoryId": "pe80001100ka",
+      "originalCategoryTitle": "80 Центральный замок",
+      "originalCategoryTitles": [
+        "80 Центральный замок"
+      ],
+      "imageUrl": "etm230-rendered/images/w80402050ka.png",
+      "viewUrl": "etm230-rendered/schemes/w80402050ka.html"
+    },
+    {
+      "id": "80452050KA",
+      "code": "80.45-U-2050KA",
+      "title": "Комфортное закрывание",
+      "appliesTo": "Модель 230",
+      "sourceUrl": "etm230/230/web1100/pe80001100ka.html#80452050KA",
+      "diagramUrl": "etm230/230/diagram/w80452050ka.html",
+      "dwfUrl": "etm230/230/diagram/w80452050ka.dwf",
+      "categoryId": "body",
+      "categoryTitle": "Кузов, двери, крыша и замки",
+      "vinStatus": "common_model_230",
+      "vinNotes": [],
+      "originalCategoryId": "pe80001100ka",
+      "originalCategoryTitle": "80 Центральный замок",
+      "originalCategoryTitles": [
+        "80 Центральный замок"
+      ],
+      "imageUrl": "etm230-rendered/images/w80452050ka.png",
+      "viewUrl": "etm230-rendered/schemes/w80452050ka.html"
+    },
+    {
+      "id": "80502050KA",
+      "code": "80.50-U-2050KA",
+      "title": "Противоугонная сигнализация ATA",
+      "appliesTo": "Модель 230",
+      "sourceUrl": "etm230/230/web1100/pe80001100ka.html#80502050KA",
+      "diagramUrl": "etm230/230/diagram/w80502050ka.html",
+      "dwfUrl": "etm230/230/diagram/w80502050ka.dwf",
+      "categoryId": "body",
+      "categoryTitle": "Кузов, двери, крыша и замки",
+      "vinStatus": "common_model_230",
+      "vinNotes": [],
+      "originalCategoryId": "pe80001100ka",
+      "originalCategoryTitle": "80 Центральный замок",
+      "originalCategoryTitles": [
+        "80 Центральный замок"
+      ],
+      "imageUrl": "etm230-rendered/images/w80502050ka.png",
+      "viewUrl": "etm230-rendered/schemes/w80502050ka.html"
+    },
+    {
+      "id": "80502051KA",
+      "code": "80.50-U-2051KA",
+      "title": "Тревожная сигнализация",
+      "appliesTo": "Модель 230",
+      "sourceUrl": "etm230/230/web1100/pe80001100ka.html#80502051KA",
+      "diagramUrl": "etm230/230/diagram/w80502051ka.html",
+      "dwfUrl": "etm230/230/diagram/w80502051ka.dwf",
+      "categoryId": "body",
+      "categoryTitle": "Кузов, двери, крыша и замки",
+      "vinStatus": "common_model_230",
+      "vinNotes": [],
+      "originalCategoryId": "pe80001100ka",
+      "originalCategoryTitle": "80 Центральный замок",
+      "originalCategoryTitles": [
+        "80 Центральный замок"
+      ],
+      "imageUrl": "etm230-rendered/images/w80502051ka.png",
+      "viewUrl": "etm230-rendered/schemes/w80502051ka.html"
+    },
+    {
+      "id": "80572050KA",
+      "code": "80.57-U-2050KA",
+      "title": "Система допуска к запуску DAS",
+      "appliesTo": "Модель 230",
+      "sourceUrl": "etm230/230/web1100/pe80001100ka.html#80572050KA",
+      "diagramUrl": "etm230/230/diagram/w80572050ka.html",
+      "dwfUrl": "etm230/230/diagram/w80572050ka.dwf",
+      "categoryId": "body",
+      "categoryTitle": "Кузов, двери, крыша и замки",
+      "vinStatus": "common_model_230",
+      "vinNotes": [],
+      "originalCategoryId": "pe80001100ka",
+      "originalCategoryTitle": "80 Центральный замок",
+      "originalCategoryTitles": [
+        "80 Центральный замок"
+      ],
+      "imageUrl": "etm230-rendered/images/w80572050ka.png",
+      "viewUrl": "etm230-rendered/schemes/w80572050ka.html"
+    },
+    {
+      "id": "80612101KA",
+      "code": "80.61-U-2101KA",
+      "title": "Блок управления Keyless Go",
+      "appliesTo": "Модель 230 до 28.02.2006 с код (889) Keyless Go",
+      "sourceUrl": "etm230/230/web1100/pe80001100ka.html#80612101KA",
+      "diagramUrl": "etm230/230/diagram/w80612101ka.html",
+      "dwfUrl": "etm230/230/diagram/w80612101ka.dwf",
+      "categoryId": "body",
+      "categoryTitle": "Кузов, двери, крыша и замки",
+      "vinStatus": "vin_match",
+      "vinNotes": [],
+      "originalCategoryId": "pe80001100ka",
+      "originalCategoryTitle": "80 Центральный замок",
+      "originalCategoryTitles": [
+        "80 Центральный замок"
+      ],
+      "imageUrl": "etm230-rendered/images/w80612101ka.png",
+      "viewUrl": "etm230-rendered/schemes/w80612101ka.html"
+    },
+    {
+      "id": "82002710KA",
+      "code": "82.00-U-2710KA",
+      "title": "MOST-шина",
+      "appliesTo": "Модель 230 с 01.06.2004",
+      "sourceUrl": "etm230/230/web1100/pe82001100ka.html#82002710KA",
+      "diagramUrl": "etm230/230/diagram/w82002710ka.html",
+      "dwfUrl": "etm230/230/diagram/w82002710ka.dwf",
+      "categoryId": "light-media",
+      "categoryTitle": "Свет, стеклоочистители и мультимедиа",
+      "vinStatus": "vin_match",
+      "vinNotes": [],
+      "originalCategoryId": "pe82001100ka",
+      "originalCategoryTitle": "82 Электрооборудование кузова",
+      "originalCategoryTitles": [
+        "82 Электрооборудование кузова"
+      ],
+      "imageUrl": "etm230-rendered/images/w82002710ka.png",
+      "viewUrl": "etm230-rendered/schemes/w82002710ka.html"
+    },
+    {
+      "id": "82102051KA",
+      "code": "82.10-U-2051KA",
+      "title": "Наружное освещение: ближний, дальний и дневной свет",
+      "appliesTo": "Модель 230 ближний свет, дальний свет, дневные ходовые огни",
+      "sourceUrl": "etm230/230/web1100/pe82001100ka.html#82102051KA",
+      "diagramUrl": "etm230/230/diagram/w82102051ka.html",
+      "dwfUrl": "etm230/230/diagram/w82102051ka.dwf",
+      "categoryId": "light-media",
+      "categoryTitle": "Свет, стеклоочистители и мультимедиа",
+      "vinStatus": "common_model_230",
+      "vinNotes": [],
+      "originalCategoryId": "pe82001100ka",
+      "originalCategoryTitle": "82 Электрооборудование кузова",
+      "originalCategoryTitles": [
+        "82 Электрооборудование кузова"
+      ],
+      "imageUrl": "etm230-rendered/images/w82102051ka.png",
+      "viewUrl": "etm230-rendered/schemes/w82102051ka.html"
+    },
+    {
+      "id": "82102051KB",
+      "code": "82.10-U-2051KB",
+      "title": "Наружное освещение: поворотники и аварийная сигнализация",
+      "appliesTo": "Модель 230 указатели поворота, аварийная сигнализация",
+      "sourceUrl": "etm230/230/web1100/pe82001100ka.html#82102051KB",
+      "diagramUrl": "etm230/230/diagram/w82102051kb.html",
+      "dwfUrl": "etm230/230/diagram/w82102051kb.dwf",
+      "categoryId": "light-media",
+      "categoryTitle": "Свет, стеклоочистители и мультимедиа",
+      "vinStatus": "common_model_230",
+      "vinNotes": [],
+      "originalCategoryId": "pe82001100ka",
+      "originalCategoryTitle": "82 Электрооборудование кузова",
+      "originalCategoryTitles": [
+        "82 Электрооборудование кузова"
+      ],
+      "imageUrl": "etm230-rendered/images/w82102051kb.png",
+      "viewUrl": "etm230-rendered/schemes/w82102051kb.html"
+    },
+    {
+      "id": "82102051KC",
+      "code": "82.10-U-2051KC",
+      "title": "Наружное освещение: габариты, стояночные огни и подсветка номера",
+      "appliesTo": "Модель 230 габаритные огни, стояночные огни, подсветка номера",
+      "sourceUrl": "etm230/230/web1100/pe82001100ka.html#82102051KC",
+      "diagramUrl": "etm230/230/diagram/w82102051kc.html",
+      "dwfUrl": "etm230/230/diagram/w82102051kc.dwf",
+      "categoryId": "light-media",
+      "categoryTitle": "Свет, стеклоочистители и мультимедиа",
+      "vinStatus": "common_model_230",
+      "vinNotes": [],
+      "originalCategoryId": "pe82001100ka",
+      "originalCategoryTitle": "82 Электрооборудование кузова",
+      "originalCategoryTitles": [
+        "82 Электрооборудование кузова"
+      ],
+      "imageUrl": "etm230-rendered/images/w82102051kc.png",
+      "viewUrl": "etm230-rendered/schemes/w82102051kc.html"
+    },
+    {
+      "id": "82102051KD",
+      "code": "82.10-U-2051KD",
+      "title": "Наружное освещение: противотуманные и задний ход",
+      "appliesTo": "Модель 230 передние противотуманные фары, задние противотуманные фонари, фонари заднего хода",
+      "sourceUrl": "etm230/230/web1100/pe82001100ka.html#82102051KD",
+      "diagramUrl": "etm230/230/diagram/w82102051kd.html",
+      "dwfUrl": "etm230/230/diagram/w82102051kd.dwf",
+      "categoryId": "light-media",
+      "categoryTitle": "Свет, стеклоочистители и мультимедиа",
+      "vinStatus": "common_model_230",
+      "vinNotes": [],
+      "originalCategoryId": "pe82001100ka",
+      "originalCategoryTitle": "82 Электрооборудование кузова",
+      "originalCategoryTitles": [
+        "82 Электрооборудование кузова"
+      ],
+      "imageUrl": "etm230-rendered/images/w82102051kd.png",
+      "viewUrl": "etm230-rendered/schemes/w82102051kd.html"
+    },
+    {
+      "id": "82202050KA",
+      "code": "82.20-U-2050KA",
+      "title": "Внутреннее освещение",
+      "appliesTo": "Модель 230 Footwell лампы, entrance и exit лампы",
+      "sourceUrl": "etm230/230/web1100/pe82001100ka.html#82202050KA",
+      "diagramUrl": "etm230/230/diagram/w82202050ka.html",
+      "dwfUrl": "etm230/230/diagram/w82202050ka.dwf",
+      "categoryId": "light-media",
+      "categoryTitle": "Свет, стеклоочистители и мультимедиа",
+      "vinStatus": "common_model_230",
+      "vinNotes": [],
+      "originalCategoryId": "pe82001100ka",
+      "originalCategoryTitle": "82 Электрооборудование кузова",
+      "originalCategoryTitles": [
+        "82 Электрооборудование кузова"
+      ],
+      "imageUrl": "etm230-rendered/images/w82202050ka.png",
+      "viewUrl": "etm230-rendered/schemes/w82202050ka.html"
+    },
+    {
+      "id": "82302050KA",
+      "code": "82.30-U-2050KA",
+      "title": "Стеклоочиститель",
+      "appliesTo": "Модель 230",
+      "sourceUrl": "etm230/230/web1100/pe82001100ka.html#82302050KA",
+      "diagramUrl": "etm230/230/diagram/w82302050ka.html",
+      "dwfUrl": "etm230/230/diagram/w82302050ka.dwf",
+      "categoryId": "light-media",
+      "categoryTitle": "Свет, стеклоочистители и мультимедиа",
+      "vinStatus": "common_model_230",
+      "vinNotes": [],
+      "originalCategoryId": "pe82001100ka",
+      "originalCategoryTitle": "82 Электрооборудование кузова",
+      "originalCategoryTitles": [
+        "82 Электрооборудование кузова"
+      ],
+      "imageUrl": "etm230-rendered/images/w82302050ka.png",
+      "viewUrl": "etm230-rendered/schemes/w82302050ka.html"
+    },
+    {
+      "id": "82602102KA",
+      "code": "82.60-U-2102KA",
+      "title": "Блок управления аудио-шлюзом",
+      "appliesTo": "Модель 230 с 01.06.2004",
+      "sourceUrl": "etm230/230/web1100/pe82001100ka.html#82602102KA",
+      "diagramUrl": "etm230/230/diagram/w82602102ka.html",
+      "dwfUrl": "etm230/230/diagram/w82602102ka.dwf",
+      "categoryId": "light-media",
+      "categoryTitle": "Свет, стеклоочистители и мультимедиа",
+      "vinStatus": "vin_match",
+      "vinNotes": [],
+      "originalCategoryId": "pe82001100ka",
+      "originalCategoryTitle": "82 Электрооборудование кузова",
+      "originalCategoryTitles": [
+        "82 Электрооборудование кузова"
+      ],
+      "imageUrl": "etm230-rendered/images/w82602102ka.png",
+      "viewUrl": "etm230-rendered/schemes/w82602102ka.html"
+    },
+    {
+      "id": "82602301KB",
+      "code": "82.60-U-2301KB",
+      "title": "Блок управления спутниковым цифровым радио SDAR",
+      "appliesTo": "Модель 230 с 01.06.2004",
+      "sourceUrl": "etm230/230/web1100/pe82001100ka.html#82602301KB",
+      "diagramUrl": "etm230/230/diagram/w82602301kb.html",
+      "dwfUrl": "etm230/230/diagram/w82602301kb.dwf",
+      "categoryId": "light-media",
+      "categoryTitle": "Свет, стеклоочистители и мультимедиа",
+      "vinStatus": "vin_match",
+      "vinNotes": [],
+      "originalCategoryId": "pe82001100ka",
+      "originalCategoryTitle": "82 Электрооборудование кузова",
+      "originalCategoryTitles": [
+        "82 Электрооборудование кузова"
+      ],
+      "imageUrl": "etm230-rendered/images/w82602301kb.png",
+      "viewUrl": "etm230-rendered/schemes/w82602301kb.html"
+    },
+    {
+      "id": "82622101KB",
+      "code": "82.62-U-2101KB",
+      "title": "Блок управления усилителем звука",
+      "appliesTo": "Модель 230 с 01.06.2004 с код (810) звук система",
+      "sourceUrl": "etm230/230/web1100/pe82001100ka.html#82622101KB",
+      "diagramUrl": "etm230/230/diagram/w82622101kb.html",
+      "dwfUrl": "etm230/230/diagram/w82622101kb.dwf",
+      "categoryId": "light-media",
+      "categoryTitle": "Свет, стеклоочистители и мультимедиа",
+      "vinStatus": "vin_match",
+      "vinNotes": [],
+      "originalCategoryId": "pe82001100ka",
+      "originalCategoryTitle": "82 Электрооборудование кузова",
+      "originalCategoryTitles": [
+        "82 Электрооборудование кузова"
+      ],
+      "imageUrl": "etm230-rendered/images/w82622101kb.png",
+      "viewUrl": "etm230-rendered/schemes/w82622101kb.html"
+    },
+    {
+      "id": "82622103KA",
+      "code": "82.62-U-2103KA",
+      "title": "Антенный модуль",
+      "appliesTo": "Модель 230 лист 1",
+      "sourceUrl": "etm230/230/web1100/pe82001100ka.html#82622103KA",
+      "diagramUrl": "etm230/230/diagram/w82622103ka.html",
+      "dwfUrl": "etm230/230/diagram/w82622103ka.dwf",
+      "categoryId": "light-media",
+      "categoryTitle": "Свет, стеклоочистители и мультимедиа",
+      "vinStatus": "common_model_230",
+      "vinNotes": [],
+      "originalCategoryId": "pe82001100ka",
+      "originalCategoryTitle": "82 Электрооборудование кузова",
+      "originalCategoryTitles": [
+        "82 Электрооборудование кузова"
+      ],
+      "imageUrl": "etm230-rendered/images/w82622103ka.png",
+      "viewUrl": "etm230-rendered/schemes/w82622103ka.html"
+    },
+    {
+      "id": "82622103KB",
+      "code": "82.62-U-2103KB",
+      "title": "Антенный модуль",
+      "appliesTo": "Модель 230 лист 2",
+      "sourceUrl": "etm230/230/web1100/pe82001100ka.html#82622103KB",
+      "diagramUrl": "etm230/230/diagram/w82622103kb.html",
+      "dwfUrl": "etm230/230/diagram/w82622103kb.dwf",
+      "categoryId": "light-media",
+      "categoryTitle": "Свет, стеклоочистители и мультимедиа",
+      "vinStatus": "common_model_230",
+      "vinNotes": [],
+      "originalCategoryId": "pe82001100ka",
+      "originalCategoryTitle": "82 Электрооборудование кузова",
+      "originalCategoryTitles": [
+        "82 Электрооборудование кузова"
+      ],
+      "imageUrl": "etm230-rendered/images/w82622103kb.png",
+      "viewUrl": "etm230-rendered/schemes/w82622103kb.html"
+    },
+    {
+      "id": "82642101KB",
+      "code": "82.64-U-2101KB",
+      "title": "Блок управления CD-чейнджером",
+      "appliesTo": "Модель 230 с 01.06.2004 с код (819) 6-диск CD чейнджер",
+      "sourceUrl": "etm230/230/web1100/pe82001100ka.html#82642101KB",
+      "diagramUrl": "etm230/230/diagram/w82642101kb.html",
+      "dwfUrl": "etm230/230/diagram/w82642101kb.dwf",
+      "categoryId": "light-media",
+      "categoryTitle": "Свет, стеклоочистители и мультимедиа",
+      "vinStatus": "vin_match",
+      "vinNotes": [],
+      "originalCategoryId": "pe82001100ka",
+      "originalCategoryTitle": "82 Электрооборудование кузова",
+      "originalCategoryTitles": [
+        "82 Электрооборудование кузова"
+      ],
+      "imageUrl": "etm230-rendered/images/w82642101kb.png",
+      "viewUrl": "etm230-rendered/schemes/w82642101kb.html"
+    },
+    {
+      "id": "82852005KA",
+      "code": "82.85-U-2005KA",
+      "title": "Навигационная система",
+      "appliesTo": "Модель 230 с 01.06.2004",
+      "sourceUrl": "etm230/230/web1100/pe82001100ka.html#82852005KA",
+      "diagramUrl": "etm230/230/diagram/w82852005ka.html",
+      "dwfUrl": "etm230/230/diagram/w82852005ka.dwf",
+      "categoryId": "light-media",
+      "categoryTitle": "Свет, стеклоочистители и мультимедиа",
+      "vinStatus": "vin_match",
+      "vinNotes": [],
+      "originalCategoryId": "pe82001100ka",
+      "originalCategoryTitle": "82 Электрооборудование кузова",
+      "originalCategoryTitles": [
+        "82 Электрооборудование кузова"
+      ],
+      "imageUrl": "etm230-rendered/images/w82852005ka.png",
+      "viewUrl": "etm230-rendered/schemes/w82852005ka.html"
+    },
+    {
+      "id": "83402050KA",
+      "code": "83.40-U-2050KA",
+      "title": "Климат-контроль: функциональная схема",
+      "appliesTo": "Модель 230",
+      "sourceUrl": "etm230/230/web1100/pe83001100ka.html#83402050KA",
+      "diagramUrl": "etm230/230/diagram/w83402050ka.html",
+      "dwfUrl": "etm230/230/diagram/w83402050ka.dwf",
+      "categoryId": "cabin",
+      "categoryTitle": "Салон, климат и сиденья",
+      "vinStatus": "common_model_230",
+      "vinNotes": [],
+      "originalCategoryId": "pe83001100ka",
+      "originalCategoryTitle": "83 Отопление и кондиционер",
+      "originalCategoryTitles": [
+        "83 Отопление и кондиционер"
+      ],
+      "imageUrl": "etm230-rendered/images/w83402050ka.png",
+      "viewUrl": "etm230-rendered/schemes/w83402050ka.html"
+    },
+    {
+      "id": "83402101KA",
+      "code": "83.40-U-2101KA",
+      "title": "Блок управления автоматическим климат-контролем AAC",
+      "appliesTo": "Модель 230 с код (581) комфортный автоматический климат-контроль",
+      "sourceUrl": "etm230/230/web1100/pe83001100ka.html#83402101KA",
+      "diagramUrl": "etm230/230/diagram/w83402101ka.html",
+      "dwfUrl": "etm230/230/diagram/w83402101ka.dwf",
+      "categoryId": "cabin",
+      "categoryTitle": "Салон, климат и сиденья",
+      "vinStatus": "vin_match",
+      "vinNotes": [],
+      "originalCategoryId": "pe83001100ka",
+      "originalCategoryTitle": "83 Отопление и кондиционер",
+      "originalCategoryTitles": [
+        "83 Отопление и кондиционер"
+      ],
+      "imageUrl": "etm230-rendered/images/w83402101ka.png",
+      "viewUrl": "etm230-rendered/schemes/w83402101ka.html"
+    },
+    {
+      "id": "88502050KA",
+      "code": "88.50-U-2050KA",
+      "title": "Дистанционное открывание багажника",
+      "appliesTo": "Модель 230 до 28.02.2006",
+      "sourceUrl": "etm230/230/web1100/pe88001100ka.html#88502050KA",
+      "diagramUrl": "etm230/230/diagram/w88502050ka.html",
+      "dwfUrl": "etm230/230/diagram/w88502050ka.dwf",
+      "categoryId": "body",
+      "categoryTitle": "Кузов, двери, крыша и замки",
+      "vinStatus": "vin_match",
+      "vinNotes": [],
+      "originalCategoryId": "pe88001100ka",
+      "originalCategoryTitle": "88 Наружное оборудование",
+      "originalCategoryTitles": [
+        "88 Наружное оборудование"
+      ],
+      "imageUrl": "etm230-rendered/images/w88502050ka.png",
+      "viewUrl": "etm230-rendered/schemes/w88502050ka.html"
+    },
+    {
+      "id": "88792050KA",
+      "code": "88.79-U-2050KA",
+      "title": "Регулировка наружных зеркал",
+      "appliesTo": "Модель 230",
+      "sourceUrl": "etm230/230/web1100/pe88001100ka.html#88792050KA",
+      "diagramUrl": "etm230/230/diagram/w88792050ka.html",
+      "dwfUrl": "etm230/230/diagram/w88792050ka.dwf",
+      "categoryId": "body",
+      "categoryTitle": "Кузов, двери, крыша и замки",
+      "vinStatus": "common_model_230",
+      "vinNotes": [],
+      "originalCategoryId": "pe88001100ka",
+      "originalCategoryTitle": "88 Наружное оборудование",
+      "originalCategoryTitles": [
+        "88 Наружное оборудование"
+      ],
+      "imageUrl": "etm230-rendered/images/w88792050ka.png",
+      "viewUrl": "etm230-rendered/schemes/w88792050ka.html"
+    },
+    {
+      "id": "91292101KA",
+      "code": "91.29-U-2101KA",
+      "title": "Блок управления левым передним сиденьем",
+      "appliesTo": "Модель 230",
+      "sourceUrl": "etm230/230/web1100/pe91001100ka.html#91292101KA",
+      "diagramUrl": "etm230/230/diagram/w91292101ka.html",
+      "dwfUrl": "etm230/230/diagram/w91292101ka.dwf",
+      "categoryId": "cabin",
+      "categoryTitle": "Салон, климат и сиденья",
+      "vinStatus": "common_model_230",
+      "vinNotes": [],
+      "originalCategoryId": "pe91001100ka",
+      "originalCategoryTitle": "91 Сиденья и SRS",
+      "originalCategoryTitles": [
+        "91 Сиденья и SRS"
+      ],
+      "imageUrl": "etm230-rendered/images/w91292101ka.png",
+      "viewUrl": "etm230-rendered/schemes/w91292101ka.html"
+    },
+    {
+      "id": "91292102KA",
+      "code": "91.29-U-2102KA",
+      "title": "Блок управления правым передним сиденьем",
+      "appliesTo": "Модель 230",
+      "sourceUrl": "etm230/230/web1100/pe91001100ka.html#91292102KA",
+      "diagramUrl": "etm230/230/diagram/w91292102ka.html",
+      "dwfUrl": "etm230/230/diagram/w91292102ka.dwf",
+      "categoryId": "cabin",
+      "categoryTitle": "Салон, климат и сиденья",
+      "vinStatus": "common_model_230",
+      "vinNotes": [],
+      "originalCategoryId": "pe91001100ka",
+      "originalCategoryTitle": "91 Сиденья и SRS",
+      "originalCategoryTitles": [
+        "91 Сиденья и SRS"
+      ],
+      "imageUrl": "etm230-rendered/images/w91292102ka.png",
+      "viewUrl": "etm230-rendered/schemes/w91292102ka.html"
+    },
+    {
+      "id": "91302050KA",
+      "code": "91.30-U-2050KA",
+      "title": "Подогрев сидений",
+      "appliesTo": "Модель 230",
+      "sourceUrl": "etm230/230/web1100/pe91001100ka.html#91302050KA",
+      "diagramUrl": "etm230/230/diagram/w91302050ka.html",
+      "dwfUrl": "etm230/230/diagram/w91302050ka.dwf",
+      "categoryId": "cabin",
+      "categoryTitle": "Салон, климат и сиденья",
+      "vinStatus": "common_model_230",
+      "vinNotes": [],
+      "originalCategoryId": "pe91001100ka",
+      "originalCategoryTitle": "91 Сиденья и SRS",
+      "originalCategoryTitles": [
+        "91 Сиденья и SRS"
+      ],
+      "imageUrl": "etm230-rendered/images/w91302050ka.png",
+      "viewUrl": "etm230-rendered/schemes/w91302050ka.html"
+    },
+    {
+      "id": "91592050KA",
+      "code": "91.59-U-2050KA",
+      "title": "Дуга безопасности",
+      "appliesTo": "Модель 230",
+      "sourceUrl": "etm230/230/web1100/pe91001100ka.html#91592050KA",
+      "diagramUrl": "etm230/230/diagram/w91592050ka.html",
+      "dwfUrl": "etm230/230/diagram/w91592050ka.dwf",
+      "categoryId": "cabin",
+      "categoryTitle": "Салон, климат и сиденья",
+      "vinStatus": "common_model_230",
+      "vinNotes": [],
+      "originalCategoryId": "pe91001100ka",
+      "originalCategoryTitle": "91 Сиденья и SRS",
+      "originalCategoryTitles": [
+        "91 Сиденья и SRS"
+      ],
+      "imageUrl": "etm230-rendered/images/w91592050ka.png",
+      "viewUrl": "etm230-rendered/schemes/w91592050ka.html"
+    }
+  ]
+}

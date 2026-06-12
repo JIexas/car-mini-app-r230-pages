@@ -1,0 +1,650 @@
+<!-----------------------------------------------------------------------------
+This page was generated on September-16-2004 10:00:00
+Created by RLE International GmbH
+Copyright 2004 Mercedes-Benz USA, LLC
+------------------------------------------------------------------------------>
+<html>
+<head>
+<title></title>
+<meta name="author" content="ffox">
+<style>
+a:link { text-decoration:none;color:#000000;}
+a:visited { text-decoration:none;color:#000000;}
+a:active { text-decoration:none;color:#000000;}
+a:hover { 
+	color:#fe9900;
+}
+div.prnsel
+{
+	position:absolute;
+	left:241px;
+	top:1px;
+	width:148;
+	height:28;
+	background-color:#e3e3e3;
+	color:#000000;
+	font-family:verdana,arial,helvetica;
+	font-size:8pt;
+	border-width:1px;
+  border-style:solid;
+  border-color:#ffffff;
+  padding:2;
+  text-align:justify;
+  filter:revealTrans(Duration=0.2,Transition=6);
+	visibility:hidden;
+}
+</style>
+<script language = "Javascript" type = "text/javascript">
+resview=new Image();
+resview.src="../images/resview_n.gif";
+resview1=new Image();
+resview1.src="../images/resview_n.gif";
+resview2=new Image();
+resview2.src="../images/resview_o.gif";
+
+hand=new Image();
+hand.src="../images/hand_n.gif";
+hand1=new Image();
+hand1.src="../images/hand_s.gif";
+hand2=new Image();
+hand2.src="../images/hand_o.gif";
+
+lupe=new Image();
+lupe.src="../images/lupe_n.gif";
+lupe1=new Image();
+lupe1.src="../images/lupe_s.gif";
+lupe2=new Image();
+lupe2.src="../images/lupe_o.gif";
+
+kreuz=new Image();
+kreuz.src="../images/kreuz_n.gif";
+kreuz1=new Image();
+kreuz1.src="../images/kreuz_s.gif";
+kreuz2=new Image();
+kreuz2.src="../images/kreuz_o.gif";
+
+highlight=new Image();
+highlight.src="../images/highlight_n.gif";
+highlight1=new Image();
+highlight1.src="../images/highlight_s.gif";
+highlight2=new Image();
+highlight2.src="../images/highlight_o.gif";
+
+printer=new Image();
+printer.src="../images/printer_n.gif";
+printer1=new Image();
+printer1.src="../images/printer_s.gif";
+printer2=new Image();
+printer2.src="../images/printer_o.gif";
+
+left=new Image();
+left.src="../images/left_n.gif";
+left1=new Image();
+left1.src="../images/left_s.gif";
+left2=new Image();
+left2.src="../images/left_o.gif";
+
+rechts=new Image();
+rechts.src="../images/rechts_n.gif";
+rechts1=new Image();
+rechts1.src="../images/rechts_s.gif";
+rechts2=new Image();
+rechts2.src="../images/rechts_o.gif";
+
+var sel="hand1";
+var cNamedView = 1;
+var printMenuSelected = false;
+
+/*
+ * Constructor for Menu Buttons
+ */
+
+function MenuButton(name,image,alt) {  
+	//  //
+	this.name = name;
+	this.image = image;
+	this.alt = alt;
+	this.active = true;
+	this.mouseOver = mouseOver;
+	this.mouseOut = mouseOut;
+	this.mouseDown = mouseDown;
+	this.mouseUp = mouseUp;
+	this.mouseClick = mouseClick;
+	this.hoverImage = hoverImage;
+	this.pressImage = pressImage;
+	this.resetImage = resetImage;
+	this.activate = activate;
+	this.deactivate = deactivate;
+	this.test = test;
+}
+
+var controls = new Array();	// array of menu button objects
+
+controls['resview'] = new MenuButton('resview','resview','Reset View');
+controls['hand1'] = new MenuButton('hand1','hand','Pan');
+controls['lupe1'] = new MenuButton('lupe1','lupe','Zoom');
+controls['kreuz1'] = new MenuButton('kreuz1','kreuz','Zoom Rectangle');
+controls['highlight1'] = new MenuButton('highlight1','highlight','Highlight Links');
+controls['printer1'] = new MenuButton('printer1','printer','Print');
+controls['left1'] = new MenuButton('left1','left','Left');
+controls['rechts1'] = new MenuButton('rechts1','rechts','Right');
+
+function mouseOver() {
+	if (! this.active) {
+		window.status = '';
+		return true;
+	}
+	window.status=""; 
+	if (this.name == 'highlight1') {
+		this.hoverImage();
+		hiLite('on');
+	}
+	else if ( this.name == 'printer1' && document.all.prnSelDiv && document.all.prnSelDiv.style.visibility == "visible" ) { 
+		// wichtig: hier keine Aenderung
+	}
+	else
+		this.hoverImage();
+	return true;
+}
+function mouseOut() {
+	if (! this.active) {
+		window.status = '';
+		return true;
+	}
+	window.status='';
+	if (this.name == 'highlight1') {
+		this.resetImage();
+		hiLite('off');
+	}
+	else if ( this.name == 'printer1' ) {
+		if ( document.all.prnSelDiv && document.all.prnSelDiv.style.visibility == "hidden" ) 
+			this.resetImage();
+	}
+	else {
+		this.resetImage();
+	}
+	return true;
+}
+function mouseDown() {
+	if (! this.active) {
+		window.status = '';
+		return true;
+	}
+	if (this.name == 'hand1') {
+		setPanCursor();
+		resetAll();
+	} else if (this.name == 'lupe1') {
+		setZoomCursor();
+		resetAll();
+	} else if (this.name == 'kreuz1') {
+		setRectCursor();
+		resetAll();
+	}
+	this.pressImage();
+	return;
+}
+function mouseUp() {
+	window.focus();
+	if (! this.active) {
+		window.status = '';
+		return true;
+	}
+	if (this.name == 'resview') {
+		resetDwfView();
+		this.resetImage();
+	} else if (this.name == 'printer1') {
+		printDiagram();
+		if ( checkDwfObj() && document.all.prnSelDiv && document.all.prnSelDiv.style.visibility == "hidden" ) {
+			var imgObj = eval('document.'+this.name);
+			imgObj.src = '../images/'+this.image+'_o.gif';
+		}
+	} else if (this.name == 'left1') {
+		showPrevNamedView();
+		this.resetImage();
+	} else if (this.name == 'rechts1') {
+		showNextNamedView();
+		this.resetImage();
+	}
+	return;
+}
+function mouseClick() {
+}
+function hoverImage() {
+	resetAll();
+	var imgObj = eval('document.'+this.name);
+
+	if ( parent.dwfcontent.document.all.diagdwf ) {
+		var currMode = parent.dwfcontent.document.all.diagdwf.CursorMode();
+		if ( ( this.name == 'hand1' && ( currMode == 0 || currMode == 1 ) ) ||
+				 ( this.name == 'lupe1' && currMode == 2 ) ||
+				 ( this.name == 'kreuz1' && currMode == 4 ) ) {
+				 //alert("ok")
+			imgObj.src = '../images/'+this.image+'_s.gif';
+		}
+		else
+			imgObj.src = '../images/'+this.image+'_o.gif';
+	}
+	else
+		imgObj.src = '../images/'+this.image+'_o.gif';
+		
+	return;
+}
+function pressImage() {
+	var imgObj = eval('document.'+this.name);
+	imgObj.src = '../images/'+this.image+'_s.gif';
+	return;
+}
+function resetImage() {
+	if (! this.active) return;
+	var imgObj = eval('document.'+this.name);
+	if ( parent.dwfcontent.document.all.diagdwf ) {
+		var currMode = parent.dwfcontent.document.all.diagdwf.CursorMode();
+		if ( ( this.name == 'hand1' && ( currMode == 0 || currMode == 1 ) ) ||
+				 ( this.name == 'lupe1' && currMode == 2 ) ||
+				 ( this.name == 'kreuz1' && currMode == 4 ) ) {
+			imgObj.src = '../images/'+this.image+'_s.gif';
+		}
+		else
+			imgObj.src = '../images/'+this.image+'_n.gif';
+	}
+	else
+		imgObj.src = '../images/'+this.image+'_n.gif';
+	return;
+}
+function activate() {
+	this.active=true;
+}
+function deactivate() {
+	var imgObj = eval('document.'+this.name);
+	imgObj.src = '../images/'+this.image+'_a.gif';
+	this.active=false;
+}
+function test() {
+	alert(this.name);
+}
+
+/*
+ * Global Functions
+ */
+ 
+function checkBrowser() {
+	if (!document.layers && document.all)
+		return "ie";
+	else if (document.layers && ! document.all)
+		return "ns";
+}
+
+function checkDwfObj() {
+	if ( parent && parent.dwfcontent ) {
+		var cDocument = parent.dwfcontent.document;
+		if (checkBrowser() == 'ie')
+			if (cDocument.all.diagdwf) return 1;
+		else if (checkBrowser() == 'ns')
+			if (cDocument.diagdwf) return 1;
+	}
+	return 0;
+}
+function getDwfObj() {
+	var cDocument = parent.dwfcontent.document;
+	if (checkBrowser() == 'ie')
+		if (cDocument.all.diagdwf) return cDocument.all.diagdwf;
+	else if (checkBrowser() == 'ns')
+		if (cDocument.diagdwf) return cDocument.diagdwf;
+	return 0;
+}
+function resetButt() {
+	resetAll();
+}
+function resetAll() {
+	if ( checkDwfObj() ) {
+		for (var obj in controls) {
+			controls[obj].activate();
+			controls[obj].resetImage();
+			var cObj = eval('document.all.'+obj);
+			cObj.alt = controls[obj].alt;
+		}
+	} else {
+		for (var obj in controls) {
+			controls[obj].deactivate();
+			var cObj = eval('document.all.'+obj);
+			cObj.alt = '';
+		}
+		controls['printer1'].activate();
+		controls['printer1'].resetImage();
+		document.all.printer1.alt = controls['printer1'].alt;
+	}
+	
+	// Printer Menu verstecken
+	if ( document.all.prnSelDiv ) {
+		document.all.prnSelDiv.filters.revealTrans.Transition = "7";
+		document.all.prnSelDiv.filters.revealTrans.Apply();
+		document.all.prnSelDiv.style.visibility = "hidden";
+		document.all.prnSelDiv.filters.revealTrans.Play();
+	}
+}
+function resetDwfView() {
+	if (parent.menWin) parent.menWin.close();
+	if (parent.dwfcontent.document.all.diagdwf) {
+		var dwfObj = parent.dwfcontent.document.all.diagdwf;
+		dwfObj.DrawNamedView("1");
+		// Ggf. Hinweispeilf loeschen:
+		parent.dwfcontent.document.all.diagdwf.DeleteLayer("TEMP");
+	}
+	return;
+}
+function setPanCursor() {
+	if (parent.menWin) parent.menWin.close();
+	if (checkDwfObj()) {
+		var cMode = 1;
+		sel='hand1';
+		var cDocument = parent.dwfcontent.document;
+		if (document.layers)
+			cDocument.diagdwf.SetCursorMode(cMode);
+		else
+			cDocument.all.diagdwf.CursorMode(cMode);
+	}
+	return;
+}
+function setZoomCursor() {
+	if (parent.menWin) parent.menWin.close();
+	if (checkDwfObj()) {
+		var cMode = 2;
+		sel='lupe1';
+		var cDocument = parent.dwfcontent.document;
+		if (document.layers)
+			cDocument.diagdwf.SetCursorMode(cMode);
+		else
+			cDocument.all.diagdwf.CursorMode(cMode);
+	}
+}
+function setRectCursor() {
+	if (parent.menWin) parent.menWin.close();
+	if (checkDwfObj()) {
+		var cMode = 4;
+		sel='kreuz1';
+		var cDocument = parent.dwfcontent.document;
+		if (document.layers)
+			cDocument.diagdwf.SetCursorMode(cMode);
+		else
+			cDocument.all.diagdwf.CursorMode(cMode);
+	}
+	return;
+}
+function hiLite(status) {
+	if (checkDwfObj()) {
+		var cDocument = parent.dwfcontent.document;
+		var dwfObj = (document.layers) ? cDocument.diagdwf : cDocument.all.diagdwf;
+		var status = (status == 'on') ? true : false;
+		dwfObj.SetHighlightURLs(status);
+	}
+	return true;
+}
+function showPrevNamedView() {
+	if (parent.menWin) parent.menWin.close();
+	if (checkDwfObj()) {
+		var cDocument = parent.dwfcontent.document;
+		var dwfObj = (document.layers) ? cDocument.diagdwf : cDocument.all.diagdwf;
+		if (cNamedView > 1) {
+			dwfObj.DrawNamedView(--cNamedView);
+		} else {
+			cNamedView = 1;
+			dwfObj.DrawNamedView(cNamedView);
+		}
+	}
+	return;
+}
+function showNextNamedView() {
+	if (parent.menWin) parent.menWin.close();
+	if (checkDwfObj()) {
+		var cDocument = parent.dwfcontent.document;
+		var dwfObj = getDwfObj();
+		var maxNamedView = getMaxNamedView();
+		if (cNamedView < maxNamedView) {
+			dwfObj.DrawNamedView(++cNamedView);
+		} else {
+			cNamedView = maxNamedView;
+			dwfObj.DrawNamedView(cNamedView);
+		}
+	}
+	return;
+}
+function getMaxNamedView() {
+	var maxNamedView = 1;
+	if (checkDwfObj()) {
+		var dwfObj = getDwfObj();
+		var extentsRight = dwfObj.GetDrawingExtentsRight();
+		for (var i=1; i<= 6; i++) {
+			dwfObj.BeginNamedViewSearch(i);
+			//alert(i+' '+dwfObj.GetNamedViewLeft()+' '+extentsRight);
+			if (dwfObj.GetNamedViewLeft() > extentsRight) {
+				break;
+			} else {
+				maxNamedView = i;
+			} 
+		}
+	}
+	return maxNamedView;
+}
+function printDiagram() {
+	if (parent.menWin) parent.menWin.close();
+	if (checkDwfObj()) {
+		if ( document.all.prnSelDiv ) {
+			var prnSelDivObj = document.all.prnSelDiv;
+			if ( prnSelDivObj.style.visibility == "hidden" ) { 
+				printMenuSelected = true;
+				document.all.prnSelDiv.filters.revealTrans.Transition = "6";
+				document.all.prnSelDiv.filters.revealTrans.Apply();
+				document.all.prnSelDiv.style.visibility = "visible";
+				document.all.prnSelDiv.filters.revealTrans.Play();
+			}
+			else {
+				printMenuSelected = false;
+				document.all.prnSelDiv.filters.revealTrans.Transition = "7";
+				document.all.prnSelDiv.filters.revealTrans.Apply();
+				document.all.prnSelDiv.style.visibility = "hidden";
+				document.all.prnSelDiv.filters.revealTrans.Play();
+			}
+		}
+	}
+	else if (parent.dwfcontent.hmid) {
+		parent.dwfcontent.hmid.focus();
+		parent.dwfcontent.hmid.print();
+	} 
+	else {
+		parent.dwfcontent.focus();
+		parent.dwfcontent.print();
+	}	
+	return;
+}
+// Open window for printing, the onLoad-Event of the DWF calls the initDiagram
+// function, which calls the actual printing function 'startPrint()' below
+function printCompleteDiagram() {
+	printMenuSelected = false;
+	if (parent.menWin) parent.menWin.close();
+	if (checkDwfObj()) {
+		document.printer1.src='../images/printer_n.gif';
+		var cDocument = parent.dwfcontent.document;
+
+		var cLink = 'print_b.html';
+		var winConf = 'status=no,width=300,height=100';
+		newWin = window.open(cLink,'n',winConf);
+		newWin.location.href = parent.dwfcontent.location.href;
+		//newWin.location.href = '../common/selectprint.html';
+	} 
+}
+// Print only current view
+function printCurrentView() {
+	printMenuSelected = false;
+	if (parent.menWin) parent.menWin.close();
+	if (checkDwfObj()) {
+		document.printer1.src='../images/printer_n.gif';
+		if ( parent && parent.dwfcontent && parent.dwfcontent.document.all.diagdwf ) {
+			if ( parent.dwfcontent.document.all.diagdwf.PrintSetup(true,true,true,0) ) {
+				var dwfPrintObj = parent.dwfcontent.document.all.diagdwf;
+				dwfPrintObj.PrintCurrentView();
+			}
+		}
+	} 
+}
+// This printing function is being called from the initDiagram function of
+// the loaded DWF in diagram.js or connector.js
+function startPrint() {
+		var maxNamedView = getMaxNamedView();
+		if ( newWin && newWin.document.all.diagdwf.PrintSetup(true,true,true,0) ) {
+			var dwfPrintObj = (document.layers) ? newWin.document.diagdwf : newWin.document.all.diagdwf;
+			for (var i=1;i<=maxNamedView;i++) {
+				dwfPrintObj.DrawNamedView(i);
+				dwfPrintObj.PrintCurrentView();
+			} 
+		}
+		newWin.location.href = 'print_e.html';
+		newWin.focus();
+		newWin.close();
+		return;
+}
+// 
+function docOnClickHandler() {
+	if ( controls['printer1'] && document.all.prnSelDiv ) {
+		controls['printer1'].resetImage();
+		document.all.prnSelDiv.filters.revealTrans.Transition = "7";
+		document.all.prnSelDiv.filters.revealTrans.Apply();
+		document.all.prnSelDiv.style.visibility = "hidden";
+		document.all.prnSelDiv.filters.revealTrans.Play();
+	}
+}
+</script>
+</head>
+<body marginwidth="0" 
+	leftmargin="0" 
+	topmargin="0" 
+	marginheight="0"
+	background="../images/back.gif"
+	onClick="docOnClickHandler()">
+
+<table width="100%"
+	border="0" 
+	cellpadding="1" 
+	cellspacing="0">
+<tr>
+
+<td width="30%" align="left" valign="top" rowspan="2"><a href="" 
+	onMouseover="return controls['resview'].mouseOver()" 
+	onMouseout="return controls['resview'].mouseOut()" 
+	onMousedown="controls['resview'].mouseDown()"
+	onMouseup="controls['resview'].mouseUp()"
+	onClick="return false"><img 
+	src="../images/resview_n.gif" 
+	width="51" 
+	name="resview" 
+	height="30" 
+	border="0" 
+	alt="Reset View"></a><a href="" 
+	onMouseover="return controls['hand1'].mouseOver()" 
+	onMouseout="return controls['hand1'].mouseOut()" 
+	onMousedown="controls['hand1'].mouseDown()"
+	onMouseup="controls['hand1'].mouseUp()"
+	onClick="return false"><img 
+	src="../images/hand_s.gif" 
+	width="35" 
+	name="hand1" 
+	height="30" 
+	border="0" 
+	alt="Pan"></a><a href="" 
+	onMouseover="return controls['lupe1'].mouseOver()" 
+	onMouseout="return controls['lupe1'].mouseOut()" 
+	onMousedown="controls['lupe1'].mouseDown()"
+	onMouseup="controls['lupe1'].mouseUp()"
+	onClick="return false"><img 
+	src="../images/lupe_n.gif" 
+	width="29" 
+	name="lupe1" 
+	height="30" 
+	border="0" 
+	alt="Zoom"></a><a href="" 
+	onMouseover="return controls['kreuz1'].mouseOver()" 
+	onMouseout="return controls['kreuz1'].mouseOut()" 
+	onMousedown="controls['kreuz1'].mouseDown()"
+	onMouseup="controls['kreuz1'].mouseUp()"
+	onClick="return false"><img 
+	src="../images/kreuz_n.gif" 
+	width="36" 
+	name="kreuz1" 
+	height="30" 
+	border="0" 
+	alt="Zoom Rectangle"></a><a href="" 
+	onMouseover="return controls['highlight1'].mouseOver()" 
+	onMouseout="return controls['highlight1'].mouseOut()"
+	onMousedown="controls['highlight1'].mouseDown()"
+	onMouseup="controls['highlight1'].mouseUp()"
+	onClick="return false"><img 
+	src="../images/highlight_n.gif" 
+	name="highlight1" 
+	width="55" 
+	height="30" 
+	border="0" 
+	alt="Highlight Links"></a><a href="" 
+	onMouseover="return controls['printer1'].mouseOver()" 
+	onMouseout="return controls['printer1'].mouseOut()" 
+	onMouseDown="window.event.cancelBubble=true;controls['printer1'].mouseDown()" 
+	onMouseUp="window.event.cancelBubble=true;controls['printer1'].mouseUp()"
+	onClick="window.event.cancelBubble=true;return false"><img 
+	src="../images/printer_n.gif" 
+	name="printer1" 
+	width="37" 
+	height="30" 
+	border="0" 
+	alt="Print Diagram"></a><a href="" 
+	onMouseover="return controls['left1'].mouseOver()" 
+	onMouseout="return controls['left1'].mouseOut()"
+	onMouseDown="controls['left1'].mouseDown()"
+	onMouseUp="controls['left1'].mouseUp()"
+	onClick="return false"><img 
+	src="../images/left_n.gif" 
+	name="left1" 
+	width="41" 
+	height="30" 
+	border="0" 
+	alt="Left"></a><a href="" 
+	onMouseover="return controls['rechts1'].mouseOver()" 
+	onMouseout="return controls['rechts1'].mouseOut()" 
+	onMouseDown="controls['rechts1'].mouseDown()" 
+	onMouseUp="controls['rechts1'].mouseUp()"
+	onClick="return false"><img 
+	src="../images/rechts_n.gif" 
+	name="rechts1" 
+	width="43" 
+	height="30" 
+	border="0" 
+	alt="Right"></a></td>
+
+<td width="55%" align="left" valign="top" height="32">
+	<table border="0" width="100%" height="30" cellspacing="0" cellpadding="0">
+	<tr><td height="15" valign="middle"><font 
+		style="font-family:verdana,arial,helvetica;font-color:#000000;font-size:8pt"><span 
+		id="partname" name="partname" style="color:blue">&nbsp;</span></font></td>
+	</tr>
+
+	<tr><td height="15" valign="top"><font 
+		style="font-family:verdana,arial,helvetica;font-color:#000000;font-size:8pt"><span 
+		id="wirename" name="wirename">&nbsp;</span></font></td>
+	</tr>
+	</table>
+</td>
+
+<td width="5%" align="right" valign="top" height="32">
+<img src="../images/typ_logo.gif" alt="" border="0" />
+</td>
+
+</tr>
+
+</table>
+
+<div id="prnSelDiv" name="prnSelDiv" class="prnsel" style="visibility:hidden">  
+	&nbsp;<a href="javascript:printCompleteDiagram()">Print complete diagram</a>
+	<br />
+	&nbsp;<a href="javascript:printCurrentView()">Print current view</a>
+</div>
+
+</body>
+</html>
+

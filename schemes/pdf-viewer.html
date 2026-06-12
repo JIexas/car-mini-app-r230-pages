@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Схема предохранителей</title>
+  <style>
+    :root{color-scheme:dark;--bg:#050706;--panel:#0d1212;--line:rgba(180,255,236,.18);--text:#f5fffc}
+    *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,Segoe UI,sans-serif;padding:8px}
+    main{max-width:1180px;margin:0 auto}.top{display:flex;gap:8px;align-items:center;margin:8px 0 10px}
+    a,.code{display:inline-flex;border:1px solid var(--line);border-radius:14px;padding:9px 11px;background:rgba(255,255,255,.055);font-weight:850;text-decoration:none;color:inherit}
+    iframe{display:block;width:100%;height:calc(100vh - 74px);border:1px solid rgba(255,255,255,.18);border-radius:12px;background:#f7f7f7}
+  </style>
+</head>
+<body>
+  <main>
+    <div class="top">
+      <a class="back" href="../index.html#maintenance" onclick="if(history.length>1){history.back();return false}">Назад к схемам</a>
+      <span class="code">PDF</span>
+    </div>
+    <iframe id="pdf" title="Схема"></iframe>
+  </main>
+  <script>
+    const params = new URLSearchParams(location.search);
+    const file = (params.get("file") || "").replace(/[^a-z0-9._-]/gi, "");
+    if (file) document.getElementById("pdf").src = file;
+  </script>
+</body>
+</html>
