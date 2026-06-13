@@ -5,30 +5,75 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Регулировка рулевой колонки с памятью</title>
   <style>
-    :root{color-scheme:dark;--bg:#050706;--panel:#0d1212;--line:rgba(180,255,236,.18);--text:#f5fffc;--muted:#9aacaa;--accent:#9fffe8}
-    *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,Segoe UI,sans-serif;padding:12px}
-    main{max-width:1180px;margin:0 auto 24px}.top{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;margin-bottom:12px}
-    a{color:inherit}.back,.code{display:inline-flex;border:1px solid var(--line);border-radius:14px;padding:9px 11px;background:rgba(255,255,255,.055);font-weight:850;text-decoration:none}
+    :root{color-scheme:dark;--bg:#050706;--panel:#0d1212;--line:rgba(180,255,236,.18);--text:#f5fffc;--muted:#9aacaa;--accent:#f1d99f}
+    *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,Segoe UI,sans-serif;padding:10px}
+    main{max-width:100%;margin:0 auto 24px}.top{position:sticky;top:0;z-index:10;background:rgba(5,7,6,.96);padding:0 0 10px;border-bottom:1px solid var(--line)}
+    .top-row{display:flex;align-items:flex-start;justify-content:space-between;gap:10px;margin-bottom:10px}
+    a{color:inherit}.back,.code,.tool{display:inline-flex;border:1px solid var(--line);border-radius:14px;padding:9px 11px;background:rgba(255,255,255,.055);font-weight:850;text-decoration:none}
     h1{font-size:20px;line-height:1.18;margin:8px 0 6px}.muted{color:var(--muted);font-size:13px;line-height:1.35}
-    .hint{margin-top:7px;color:var(--accent);font-size:12px;font-weight:800}
-    .meta{border:1px solid var(--line);border-radius:18px;background:var(--panel);padding:12px;margin-bottom:12px}
-    .viewer{overflow:auto;border:1px solid rgba(255,255,255,.18);border-radius:12px;background:#f7f7f7}
-    img{display:block;width:auto;min-width:1280px;max-width:none;height:auto;background:white}
-    @media(max-width:720px){body{padding:8px}.top{display:block}.code{margin-top:8px}h1{font-size:18px}.viewer{border-radius:10px}}
+    .tools{display:flex;gap:7px;overflow:auto;padding-bottom:2px}.tool{white-space:nowrap;color:var(--text);font-size:13px;cursor:pointer}
+    .tool.active{border-color:rgba(241,217,159,.65);background:rgba(241,217,159,.13);color:var(--accent)}
+    .meta{border:1px solid var(--line);border-radius:16px;background:var(--panel);padding:11px;margin:12px 0}
+    .readable{display:block}.full{display:none}.mode-full .readable{display:none}.mode-full .full{display:block}
+    .fragment{margin:10px 0 14px;border:1px solid rgba(255,255,255,.18);border-radius:12px;overflow:hidden;background:#fff}
+    .fragment b{display:block;padding:8px 10px;background:#111315;color:var(--accent);font-size:13px}
+    .fragment img{display:block;width:100%;height:auto;background:white}
+    .viewer{overflow:auto;border:1px solid rgba(255,255,255,.18);border-radius:12px;background:#fff;max-height:calc(100vh - 190px);touch-action:pan-x pan-y}
+    .viewer img{display:block;width:auto;max-width:none;height:auto;background:white;transform-origin:top left}
+    .fit img{width:100%;min-width:0}
+    @media(max-width:720px){body{padding:8px}.top-row{display:block}.code{margin-top:8px}h1{font-size:18px}.viewer{border-radius:10px;max-height:calc(100vh - 205px)}}
   </style>
 </head>
 <body>
   <main>
     <div class="top">
-      <a class="back" href="../../index.html#maintenance" onclick="if(history.length>1){history.back();return false}">Назад к схемам</a>
-      <span class="code">46.15-U-2050KA</span>
+      <div class="top-row">
+        <a class="back" href="../../index.html#maintenance" onclick="if(history.length>1){history.back();return false}">Назад к схемам</a>
+        <span class="code">46.15-U-2050KA</span>
+      </div>
+      <div class="tools">
+        <button class="tool active" data-mode="readable">Фрагменты</button>
+        <button class="tool" data-mode="full">Вся схема</button>
+        <button class="tool" data-fit>По ширине</button>
+        <button class="tool" data-scale="1">100%</button>
+        <button class="tool" data-zoom="-">−</button>
+        <button class="tool" data-zoom="+">+</button>
+      </div>
     </div>
     <section class="meta">
       <div class="muted">Рулевое управление и АКПП</div>
       <h1>Регулировка рулевой колонки с памятью</h1>
-      <div class="hint">Схема открыта в высоком разрешении. На телефоне двигай изображение в стороны и увеличивай жестом.</div>
     </section>
-    <div class="viewer"><img src="../images/w46152050ka.png" alt="Регулировка рулевой колонки с памятью"></div>
+    <div class="readable"><section class="fragment"><b>Фрагмент 1</b><img src="../fragments/w46152050ka-01.png" alt="Фрагмент 1"></section><section class="fragment"><b>Фрагмент 2</b><img src="../fragments/w46152050ka-02.png" alt="Фрагмент 2"></section><section class="fragment"><b>Фрагмент 3</b><img src="../fragments/w46152050ka-03.png" alt="Фрагмент 3"></section><section class="fragment"><b>Фрагмент 4</b><img src="../fragments/w46152050ka-04.png" alt="Фрагмент 4"></section><section class="fragment"><b>Фрагмент 5</b><img src="../fragments/w46152050ka-05.png" alt="Фрагмент 5"></section><section class="fragment"><b>Фрагмент 6</b><img src="../fragments/w46152050ka-06.png" alt="Фрагмент 6"></section><section class="fragment"><b>Фрагмент 7</b><img src="../fragments/w46152050ka-07.png" alt="Фрагмент 7"></section><section class="fragment"><b>Фрагмент 8</b><img src="../fragments/w46152050ka-08.png" alt="Фрагмент 8"></section><section class="fragment"><b>Фрагмент 9</b><img src="../fragments/w46152050ka-09.png" alt="Фрагмент 9"></section><section class="fragment"><b>Фрагмент 10</b><img src="../fragments/w46152050ka-10.png" alt="Фрагмент 10"></section><section class="fragment"><b>Фрагмент 11</b><img src="../fragments/w46152050ka-11.png" alt="Фрагмент 11"></section><section class="fragment"><b>Фрагмент 12</b><img src="../fragments/w46152050ka-12.png" alt="Фрагмент 12"></section><section class="fragment"><b>Фрагмент 13</b><img src="../fragments/w46152050ka-13.png" alt="Фрагмент 13"></section><section class="fragment"><b>Фрагмент 14</b><img src="../fragments/w46152050ka-14.png" alt="Фрагмент 14"></section><section class="fragment"><b>Фрагмент 15</b><img src="../fragments/w46152050ka-15.png" alt="Фрагмент 15"></section><section class="fragment"><b>Фрагмент 16</b><img src="../fragments/w46152050ka-16.png" alt="Фрагмент 16"></section><section class="fragment"><b>Фрагмент 17</b><img src="../fragments/w46152050ka-17.png" alt="Фрагмент 17"></section><section class="fragment"><b>Фрагмент 18</b><img src="../fragments/w46152050ka-18.png" alt="Фрагмент 18"></section></div>
+    <div class="full"><div class="viewer"><img src="../images/w46152050ka.png" alt="Регулировка рулевой колонки с памятью"></div></div>
   </main>
+  <script>
+    const body = document.body;
+    const viewer = document.querySelector(".viewer");
+    const img = document.querySelector(".viewer img");
+    const buttons = [...document.querySelectorAll(".tool")];
+    let scale = 1;
+    function setActive(selector, button){ document.querySelectorAll(selector).forEach(item => item.classList.toggle("active", item === button)); }
+    function setScale(next, button){
+      body.classList.add("mode-full");
+      scale = Math.max(.5, Math.min(3, next));
+      viewer.classList.remove("fit");
+      img.style.width = Math.round(img.naturalWidth * scale) + "px";
+      setActive("[data-scale], [data-zoom], [data-fit]", button || document.querySelector('[data-scale="1"]'));
+    }
+    function initFullImage(){
+      if (!img.naturalWidth) return;
+      img.style.width = img.naturalWidth + "px";
+    }
+    document.querySelector('[data-mode="readable"]').onclick = (event) => { body.classList.remove("mode-full"); setActive("[data-mode]", event.currentTarget); };
+    document.querySelector('[data-mode="full"]').onclick = (event) => { body.classList.add("mode-full"); setActive("[data-mode]", event.currentTarget); };
+    document.querySelector("[data-fit]").onclick = (event) => { body.classList.add("mode-full"); img.style.width = ""; viewer.classList.add("fit"); setActive("[data-scale], [data-zoom], [data-fit]", event.currentTarget); };
+    document.querySelector('[data-scale="1"]').onclick = (event) => setScale(1, event.currentTarget);
+    document.querySelector('[data-zoom="-"]').onclick = (event) => setScale(scale - .25, event.currentTarget);
+    document.querySelector('[data-zoom="+"]').onclick = (event) => setScale(scale + .25, event.currentTarget);
+    img.addEventListener("load", initFullImage);
+    initFullImage();
+    body.classList.remove("mode-full");
+  </script>
 </body>
 </html>

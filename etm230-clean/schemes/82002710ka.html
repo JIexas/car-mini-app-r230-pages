@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>MOST-шина</title>
+  <style>
+    :root{color-scheme:dark;--bg:#08090a;--panel:#111315;--line:rgba(220,226,230,.16);--text:#f4f1ec;--muted:#9da4a7;--accent:#f1d99f}
+    *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,Segoe UI,sans-serif;padding:10px}
+    .top{position:sticky;top:0;z-index:5;background:rgba(8,9,10,.96);padding:8px 0 10px;border-bottom:1px solid var(--line)}
+    a{color:inherit}.back,.tool{display:inline-flex;border:1px solid var(--line);border-radius:14px;padding:9px 11px;background:rgba(255,255,255,.06);font-weight:850;text-decoration:none}
+    h1{font-size:18px;margin:10px 0 3px}.muted{color:var(--muted);font-size:13px}
+    .tools{display:flex;gap:7px;overflow:auto;margin-top:9px}.tool{white-space:nowrap;color:var(--text);font-size:13px;cursor:pointer}
+    .tool.active{border-color:rgba(241,217,159,.65);background:rgba(241,217,159,.13);color:var(--accent)}
+    .page{margin:12px 0 18px;border:1px solid var(--line);border-radius:14px;overflow:auto;background:#111;touch-action:pan-x pan-y}
+    .page b{display:block;padding:8px 10px;background:var(--panel);color:var(--accent)}
+    .page img{display:block;width:auto;max-width:none;height:auto;background:white}
+    body.fit .page img{width:100%;min-width:0}
+  </style>
+</head>
+<body>
+  <div class="top">
+    <a class="back" href="../../index.html#maintenance" onclick="if(history.length>1){history.back();return false}">Назад к схемам</a>
+    <h1>MOST-шина</h1>
+    <div class="muted">82.00-U-2710KA · читаемые листы схемы</div>
+    <div class="tools">
+      <button class="tool" data-fit>По ширине</button>
+      <button class="tool active" data-scale="1">100%</button>
+      <button class="tool" data-zoom="-">−</button>
+      <button class="tool" data-zoom="+">+</button>
+    </div>
+  </div>
+  <section class="page"><b>Лист 1</b><img src="../../etm230-clean/images/82002710ka-01.png" alt="Лист 1"></section><section class="page"><b>Лист 2</b><img src="../../etm230-clean/images/82002710ka-02.png" alt="Лист 2"></section><section class="page"><b>Лист 3</b><img src="../../etm230-clean/images/82002710ka-03.png" alt="Лист 3"></section><section class="page"><b>Лист 4</b><img src="../../etm230-clean/images/82002710ka-04.png" alt="Лист 4"></section><section class="page"><b>Лист 5</b><img src="../../etm230-clean/images/82002710ka-05.png" alt="Лист 5"></section><section class="page"><b>Лист 6</b><img src="../../etm230-clean/images/82002710ka-06.png" alt="Лист 6"></section><section class="page"><b>Лист 7</b><img src="../../etm230-clean/images/82002710ka-07.png" alt="Лист 7"></section><section class="page"><b>Лист 8</b><img src="../../etm230-clean/images/82002710ka-08.png" alt="Лист 8"></section><section class="page"><b>Лист 9</b><img src="../../etm230-clean/images/82002710ka-09.png" alt="Лист 9"></section><section class="page"><b>Лист 10</b><img src="../../etm230-clean/images/82002710ka-10.png" alt="Лист 10"></section><section class="page"><b>Лист 11</b><img src="../../etm230-clean/images/82002710ka-11.png" alt="Лист 11"></section><section class="page"><b>Лист 12</b><img src="../../etm230-clean/images/82002710ka-12.png" alt="Лист 12"></section><section class="page"><b>Лист 13</b><img src="../../etm230-clean/images/82002710ka-13.png" alt="Лист 13"></section><section class="page"><b>Лист 14</b><img src="../../etm230-clean/images/82002710ka-14.png" alt="Лист 14"></section><section class="page"><b>Лист 15</b><img src="../../etm230-clean/images/82002710ka-15.png" alt="Лист 15"></section><section class="page"><b>Лист 16</b><img src="../../etm230-clean/images/82002710ka-16.png" alt="Лист 16"></section><section class="page"><b>Лист 17</b><img src="../../etm230-clean/images/82002710ka-17.png" alt="Лист 17"></section><section class="page"><b>Лист 18</b><img src="../../etm230-clean/images/82002710ka-18.png" alt="Лист 18"></section><section class="page"><b>Лист 19</b><img src="../../etm230-clean/images/82002710ka-19.png" alt="Лист 19"></section><section class="page"><b>Лист 20</b><img src="../../etm230-clean/images/82002710ka-20.png" alt="Лист 20"></section><section class="page"><b>Лист 21</b><img src="../../etm230-clean/images/82002710ka-21.png" alt="Лист 21"></section><section class="page"><b>Лист 22</b><img src="../../etm230-clean/images/82002710ka-22.png" alt="Лист 22"></section><section class="page"><b>Лист 23</b><img src="../../etm230-clean/images/82002710ka-23.png" alt="Лист 23"></section><section class="page"><b>Лист 24</b><img src="../../etm230-clean/images/82002710ka-24.png" alt="Лист 24"></section><section class="page"><b>Лист 25</b><img src="../../etm230-clean/images/82002710ka-25.png" alt="Лист 25"></section><section class="page"><b>Лист 26</b><img src="../../etm230-clean/images/82002710ka-26.png" alt="Лист 26"></section><section class="page"><b>Лист 27</b><img src="../../etm230-clean/images/82002710ka-27.png" alt="Лист 27"></section><section class="page"><b>Лист 28</b><img src="../../etm230-clean/images/82002710ka-28.png" alt="Лист 28"></section><section class="page"><b>Лист 29</b><img src="../../etm230-clean/images/82002710ka-29.png" alt="Лист 29"></section>
+  <script>
+    const buttons = [...document.querySelectorAll(".tool")];
+    let scale = 1;
+    function active(button){ buttons.forEach(item => item.classList.toggle("active", item === button)); }
+    function images(){ return [...document.querySelectorAll(".page img")]; }
+    function setScale(next, button){
+      scale = Math.max(.5, Math.min(3, next));
+      document.body.classList.remove("fit");
+      for (const img of images()) {
+        const width = img.naturalWidth || 1400;
+        img.style.width = Math.round(width * scale) + "px";
+      }
+      active(button || document.querySelector('[data-scale="1"]'));
+    }
+    document.querySelector("[data-fit]").onclick = (event) => {
+      for (const img of images()) img.style.width = "";
+      document.body.classList.add("fit");
+      active(event.currentTarget);
+    };
+    document.querySelector('[data-scale="1"]').onclick = (event) => setScale(1, event.currentTarget);
+    document.querySelector('[data-zoom="-"]').onclick = (event) => setScale(scale - .25, event.currentTarget);
+    document.querySelector('[data-zoom="+"]').onclick = (event) => setScale(scale + .25, event.currentTarget);
+    window.addEventListener("load", () => setScale(1, document.querySelector('[data-scale="1"]')));
+  </script>
+</body>
+</html>
