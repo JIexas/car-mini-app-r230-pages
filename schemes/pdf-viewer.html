@@ -2,6 +2,7 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; frame-src 'self'; script-src 'self'; style-src 'unsafe-inline'; object-src 'none'; base-uri 'none'">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Схема предохранителей</title>
   <style>
@@ -21,9 +22,15 @@
     <iframe id="pdf" title="Схема"></iframe>
   </main>
   <script>
+    const allowedFiles = new Set(["rear-through-plate-f78.pdf","rear-right-compartment.pdf","rear-right-relays.pdf","engine-driver-side.pdf","engine-driver-side-relays.pdf","engine-passenger-side.pdf","engine-passenger-side-relays.pdf"]);
     const params = new URLSearchParams(location.search);
-    const file = (params.get("file") || "").replace(/[^a-z0-9._-]/gi, "");
-    if (file) document.getElementById("pdf").src = file;
+    const file = params.get("file") || "";
+    const pdf = document.getElementById("pdf");
+    if (allowedFiles.has(file)) {
+      pdf.src = file;
+    } else {
+      pdf.replaceWith(document.createTextNode("Схема не найдена."));
+    }
   </script>
 </body>
 </html>
