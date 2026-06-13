@@ -14,17 +14,14 @@
     .tools{display:flex;gap:7px;overflow:auto;padding-bottom:2px}.tool{white-space:nowrap;color:var(--text);font-size:13px;cursor:pointer}
     .tool.active{border-color:rgba(241,217,159,.65);background:rgba(241,217,159,.13);color:var(--accent)}
     .meta{border:1px solid var(--line);border-radius:16px;background:var(--panel);padding:11px;margin:12px 0}
-    .readable{display:block}.full{display:none}.mode-full .readable{display:none}.mode-full .full{display:block}
-    .fragment{margin:10px 0 14px;border:1px solid rgba(255,255,255,.18);border-radius:12px;overflow:hidden;background:#fff}
-    .fragment b{display:block;padding:8px 10px;background:#111315;color:var(--accent);font-size:13px}
-    .fragment img{display:block;width:100%;height:auto;background:white}
-    .viewer{overflow:auto;border:1px solid rgba(255,255,255,.18);border-radius:12px;background:#fff;max-height:calc(100vh - 190px);touch-action:pan-x pan-y}
+    .full{display:block}
+    .viewer{overflow:auto;border:1px solid rgba(255,255,255,.18);border-radius:12px;background:#fff;height:calc(100vh - 190px);touch-action:pan-x pan-y}
     .viewer img{display:block;width:auto;max-width:none;height:auto;background:white;transform-origin:top left}
     .fit img{width:100%;min-width:0}
-    @media(max-width:720px){body{padding:8px}.top-row{display:block}.code{margin-top:8px}h1{font-size:18px}.viewer{border-radius:10px;max-height:calc(100vh - 205px)}}
+    @media(max-width:720px){body{padding:8px}.top-row{display:block}.code{margin-top:8px}h1{font-size:18px}.viewer{border-radius:10px;height:calc(100vh - 205px)}}
   </style>
 </head>
-<body>
+<body class="mode-full">
   <main>
     <div class="top">
       <div class="top-row">
@@ -32,10 +29,9 @@
         <span class="code">82.30-U-2050KA</span>
       </div>
       <div class="tools">
-        <button class="tool active" data-mode="readable">Фрагменты</button>
-        <button class="tool" data-mode="full">Вся схема</button>
+        <button class="tool active" data-mode="full">Вся схема</button>
         <button class="tool" data-fit>По ширине</button>
-        <button class="tool" data-scale="1">100%</button>
+        <button class="tool active" data-scale="1">100%</button>
         <button class="tool" data-zoom="-">−</button>
         <button class="tool" data-zoom="+">+</button>
       </div>
@@ -44,7 +40,6 @@
       <div class="muted">Свет, стеклоочистители и мультимедиа</div>
       <h1>Стеклоочиститель</h1>
     </section>
-    <div class="readable"><section class="fragment"><b>Фрагмент 1</b><img src="../fragments/w82302050ka-01.png" alt="Фрагмент 1"></section><section class="fragment"><b>Фрагмент 2</b><img src="../fragments/w82302050ka-02.png" alt="Фрагмент 2"></section><section class="fragment"><b>Фрагмент 3</b><img src="../fragments/w82302050ka-03.png" alt="Фрагмент 3"></section><section class="fragment"><b>Фрагмент 4</b><img src="../fragments/w82302050ka-04.png" alt="Фрагмент 4"></section><section class="fragment"><b>Фрагмент 5</b><img src="../fragments/w82302050ka-05.png" alt="Фрагмент 5"></section><section class="fragment"><b>Фрагмент 6</b><img src="../fragments/w82302050ka-06.png" alt="Фрагмент 6"></section><section class="fragment"><b>Фрагмент 7</b><img src="../fragments/w82302050ka-07.png" alt="Фрагмент 7"></section><section class="fragment"><b>Фрагмент 8</b><img src="../fragments/w82302050ka-08.png" alt="Фрагмент 8"></section><section class="fragment"><b>Фрагмент 9</b><img src="../fragments/w82302050ka-09.png" alt="Фрагмент 9"></section><section class="fragment"><b>Фрагмент 10</b><img src="../fragments/w82302050ka-10.png" alt="Фрагмент 10"></section></div>
     <div class="full"><div class="viewer"><img src="../images/w82302050ka.png" alt="Стеклоочиститель"></div></div>
   </main>
   <script>
@@ -65,7 +60,6 @@
       if (!img.naturalWidth) return;
       img.style.width = img.naturalWidth + "px";
     }
-    document.querySelector('[data-mode="readable"]').onclick = (event) => { body.classList.remove("mode-full"); setActive("[data-mode]", event.currentTarget); };
     document.querySelector('[data-mode="full"]').onclick = (event) => { body.classList.add("mode-full"); setActive("[data-mode]", event.currentTarget); };
     document.querySelector("[data-fit]").onclick = (event) => { body.classList.add("mode-full"); img.style.width = ""; viewer.classList.add("fit"); setActive("[data-scale], [data-zoom], [data-fit]", event.currentTarget); };
     document.querySelector('[data-scale="1"]').onclick = (event) => setScale(1, event.currentTarget);
@@ -73,7 +67,6 @@
     document.querySelector('[data-zoom="+"]').onclick = (event) => setScale(scale + .25, event.currentTarget);
     img.addEventListener("load", initFullImage);
     initFullImage();
-    body.classList.remove("mode-full");
   </script>
 </body>
 </html>
